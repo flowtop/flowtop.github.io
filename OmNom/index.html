@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/character.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+	<title>OmNom</title>
+</head>
+<body>
+	<div class="character-window">
+
+		<div class="character__message">		
+
+			<div class="character__text-part">
+				<h1 class="text-part__title">ПРИВЕТ!</h1>
+				<p class="text-part__text">Я Ам-Ням. Не могли бы вы ответить на вопрос?</p>
+			</div>
+
+			<div class="rating-area">
+				<input type="radio" id="star-5" name="rating" value="5">
+				<label for="star-5" title="Оценка «5»"></label>	
+				<input type="radio" id="star-4" name="rating" value="4">
+				<label for="star-4" title="Оценка «4»"></label>    
+				<input type="radio" id="star-3" name="rating" value="3">
+				<label for="star-3" title="Оценка «3»"></label>  
+				<input type="radio" id="star-2" name="rating" value="2">
+				<label for="star-2" title="Оценка «2»"></label>    
+				<input type="radio" id="star-1" name="rating" value="1">
+				<label for="star-1" title="Оценка «1»"></label>
+			</div>
+
+			<input type="text" class="character__user-feedback" placeholder="Кратко опишите проблему">
+
+			<button class="btns-part__character-btn btns-part__ok-btn">OK</button>
+
+			<div class="character__btns-part">
+				<button class="btns-part__character-btn btns-part__conf-btn" onclick="getUserResponse(true)">Да</button>
+				<button class="btns-part__character-btn btns-part__decl-btn" onclick="getUserResponse(false)">Нет</button>
+			</div>
+
+		</div>
+
+		<img src="gif/hello.gif" alt="Ам-Ням" class="character__gif">
+	
+	</div>
+
+	<script src="js/character.js"></script>
+</body>
+</html>

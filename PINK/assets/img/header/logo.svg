@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="52" viewBox="0 0 130 52">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 40.994px;
+        font-family: Lavanderia;
+      }
+
+      .cls-2 {
+        fill: #b73958;
+      }
+    </style>
+  </defs>
+  <text id="Graff_pink" data-name="Graff pink" class="cls-1" y="37">Graff <tspan class="cls-2">pink</tspan></text>
+</svg>

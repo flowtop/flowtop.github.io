@@ -1,0 +1,150 @@
+* {
+	font-family: 'Roboto', serif;
+}
+
+#wrapper {
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	padding-bottom: 35px;
+}
+
+#title {
+	font-weight: bold;
+	font-size: 28px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+#image {
+	width: 70%;
+	height: 600px;
+	background: url(img/img.jpg);
+	background-size: cover;
+	text-align: center;
+	margin: 35px auto;
+	display: none;
+}
+
+#boxes-block {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.box {
+	height: 30px;
+	width: 105px;
+	background-color: #5b9bd5;
+	color: #FFF;
+	border: 1px solid #3F607E;
+	display: inline-block;
+	margin: 5px;
+	text-align: center;
+	padding-top: 4px;
+	box-sizing: border-box;
+	cursor: move;
+	z-index: 10;
+	font-size: 16px;
+}
+
+#btn {
+	margin-bottom: 25px;
+}
+
+#btn.check {
+	background-color: yellow;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	border: 2px solid black;
+	outline: none;
+	margin-bottom: 50px;
+}
+
+
+#btn.tryagain {
+	height: 75px;
+	width: 210px;
+	background-color: #5790F9;
+	font-size: 16px;
+	color: #FFF;
+	outline: none;
+	border: 1px solid #3F607E;
+	border-radius: 10px;
+}
+
+#btn.done {
+	height: 75px;
+	width: 210px;
+	background-color: #0A940A;
+	font-size: 16px;
+	color: #FFF;
+	outline: none;
+	border: 1px solid #21501F;
+	border-radius: 10px;
+}
+
+#again-btn {
+	height: 55px;
+	width: 210px;
+	margin-right: 20px;
+	background-color: #5790F9;
+	font-size: 16px;
+	color: #FFF;
+	outline: none;
+	border: 1px solid #3F607E;
+	border-radius: 10px;
+	display: none;
+	cursor: pointer;
+}
+
+#next-btn {
+	height: 55px;
+	width: 90px;
+	margin-right: 20px;
+	background-color: #0A940A;
+	font-size: 16px;
+	color: #FFF;
+	outline: none;
+	border: 1px solid #21501F;
+	border-radius: 10px;
+	display: none;
+	cursor: pointer;
+}
+
+#next-btn a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.space-box {
+	
+}
+
+.space {
+	z-index: -5;
+}
+
+#quiz {
+	padding: 50px 8%;
+	font-size: 14px;
+}
+
+.question {
+	margin-bottom: 20px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+.space {
+	font-family: 'Castoro', serif;
+	margin: 0 5px;
+}

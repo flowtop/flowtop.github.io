@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css" defer>
+	
+	<title>Tic-Tac-Toe</title>
+</head>
+<body>
+
+	<div class="wrapper">
+		<h1>Крестики-Нолики</h1>
+		<div id="gameblock">
+			<div class="miniblock" id="miniblock1">
+				
+			</div>
+			<div class="miniblock" id="miniblock2">
+				
+			</div>
+			<div class="miniblock" id="miniblock3">
+				
+			</div>
+			<div class="miniblock" id="miniblock4">
+				
+			</div>
+			<div class="miniblock" id="miniblock5">
+				
+			</div>
+			<div class="miniblock" id="miniblock6">
+				
+			</div>
+			<div class="miniblock" id="miniblock7">
+				
+			</div>
+			<div class="miniblock" id="miniblock8">
+				
+			</div>
+			<div class="miniblock" id="miniblock9">
+				
+			</div>
+		</div>
+
+		<p id="move">Сейчас ход: <strong id="fraction">Крестиков</strong></p>
+		<div id="win"><strong id="winner"></strong> победили!</div>
+		<button id="play-again" onclick="reloadGame()">ЗАНОВО</button>
+	</div>
+	<script src="js/logic.js"></script>
+</body>
+</html>
