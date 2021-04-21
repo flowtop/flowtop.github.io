@@ -1,8 +1,8 @@
-$_background: #889FAD;
-$_header: #295976;
-$_footer: #25475C;
-$_blocks: #e9eef1;
-$_blocks__text: #254152;
+$_background: #FBEBED;
+$_header: #582532;
+$_footer: #582532;
+$_blocks: #993746;
+$_blocks__text: #FBEBED;
 
 * {
     margin: 0;
@@ -23,7 +23,7 @@ button {
     background-color: $_header;
     border: none;
     outline: none;
-    color: $_blocks !important;
+    color: $_blocks__text !important;
 }
 
 .wrapper {
