@@ -1,197 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<!-- CHARSET -->
 	<meta charset="UTF-8">
-
-	<!-- MOBILE RESPONSE -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<!-- EDGE -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-	<!-- MAIN CSS FILE -->
-	<link rel="stylesheet" href="assets/css/main.css">
-
 	<!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-	<!-- ANIMATE.CSS CDN -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!-- MAIN CSS STYLESHEET -->
+	<link rel="stylesheet" href="assets/css/style.css">
 
-	<!-- PAGE NAME -->
-	<title>Udin Cultural Center</title>
+	<title>Udins Cultural Center</title>
 </head>
 <body>
 	
 	<div class="wrapper">
-
-		<!-- HEADER -->
-		<header class="header">
-			<h3 class="title"><a href="#">УДИНСКИЙ КУЛЬТУРНЫЙ ЦЕНТР</a></h3>
-			
-			<button class="menu-btn" onclick="sideMenu()">
-				<div class="btn-row btn-row1"></div>
-				<div class="btn-row btn-row2"></div>
-				<div class="btn-row btn-row3"></div>
-			</button>
-
-			<nav class="nav-bar">
-
-				<div class="nav-item nav-item--main">ГЛАВНАЯ</div>
-				<div class="nav-item nav-item--about">О НАС</div>
-				<div class="nav-item nav-item--history">ИСТОРИЯ</div>
-				<div class="nav-item nav-item--culture">КУЛЬТУРА</div>
-				<div class="nav-item nav-item--school">ШКОЛА</div>
-
+		<div class="intro">
+			<h1 class="intro__title">Удинский Культурный Центр</h1>
+			<nav class="intro__nav-bar">
+				<a href="#" class="intro__nav-bar__item">ОБ УДИНАХ</a>
+				<a href="#" class="intro__nav-bar__item">КУЛЬТУРА</a>
+				<a href="#" class="intro__nav-bar__item">ТРАДИЦИИ</a>
+				<a href="#" class="intro__nav-bar__item">ЯЗЫК</a>
+				<a href="#" class="intro__nav-bar__item">НАША ШКОЛА</a>
 			</nav>
 
-		</header>
+			<div class="intro__go-btn">МЕНЮ</div>
 
-
-		<!-- NEWS BLOCK -->
-		<div class="news wow animate__animated animate__fadeInUp" data-wow-offset="150">
-			<div class="card card1">
-				<div class="title">ЗАГОЛОВОК НОВОСТИ 1</div>
-			</div>
-			<div class="card card2">
-				<div class="title">ЗАГОЛОВОК НОВОСТИ 2</div>
-			</div>
-			<div class="card card3">
-				<div class="title">ЗАГОЛОВОК НОВОСТИ 3</div>
+			<div class="intro__menu intro__menu--closed">
+				<h2 class="intro__menu__title">ПЕРЕЙТИ К</h2>
+				<div class="intro__menu__link-board">
+					<div class="intro__menu__link-board__link">ОБ УДИНАХ</div>
+					<div class="intro__menu__link-board__link">КУЛЬТУРА</div>
+					<div class="intro__menu__link-board__link">ТРАДИЦИИ</div>
+					<div class="intro__menu__link-board__link">ЯЗЫК</div>
+					<div class="intro__menu__link-board__link">НАША ШКОЛА</div>
+				</div>
 			</div>
 		</div>
-
-		<div class="info">
-			<div class="title-block wow animate__animated animate__fadeInUp" data-wow-offset="150">
-				<h3 class="title">ОБ УДИНАХ. ИСТОРИЯ, КУЛЬТУРА, МЕСТО ПРОЖИВАНИЯ И ДР.</h3>	
-			</div>
-
-			<div class="card history-card wow animate__animated animate__fadeInUp" data-wow-offset="150">
-				<div class="content">
-
-					<h3 class="title">УДИНЫ</h3>
-
-					<div class="text">
-						Каждый раз, когда знакомишься с людьми и рассказываешь о своей национальности, у собеседника случается культурное открытие. Мало, кто знает, кто такие удины. А мы, представители этой национальности, с гордостью рассказываем о своём народе. 
-						<br> <br>
-						Удины – прямые потомки населения древней Кавказской Албании. Если вдаваться глубоко в историю, впервые об удинах упоминает ещё  Геродот в своей знаменитой «Истории». Описывая Марафонскую битву, древнегреческий историк писал о том, что в составе персидской армии воевали и солдаты «утиев». Это и были наши воины-удины.
-
-					</div>
-
-					<a href="#"><button class="link-btn">Читать больше</button></a>
+	
+		<div class="news">
+			<h1 class="news__title">РУБРИКА</h1>
+		
+			<div class="news__cards">
+				<div class="news__cards__block">
+					<h2 class="news__cards__block__title">ЗАГОЛОВОК</h2>
+					<p class="news__cards__block__description">
+						Lorem ipsum dolor sit amet consectetur adipisicing.
+					</p>
 				</div>
 				
-				<div class="image"></div>
-			</div>
-
-			<div class="card living-card wow animate__animated animate__fadeInUp" data-wow-offset="150">
-				
-				<div class="image"></div>
-
-				<div class="content">
-
-					<h3 class="title">ГДЕ ЖИВУТ УДИНЫ?</h3>
-
-					<div class="text">
-						Наш народ малочисленный. Всего во всем мире проживают около 10 тысяч удинов. Историческая Родина – село Нидж, которое находится в Азербайджане. Там и проживает почти половина наших. Все остальные -  в разных городах и странах. В основном – это  Ростовская область, Краснодарский край,  Свердловская область, Украина, Грузия. Но где бы ни жили удины, народ очень сплочённый и о своих корнях не забывает. Главное место встречи, особенно летом, – это историческая деревня. В Нидж приезжают сотни семей, отметить свадьбы, Дни Рождения или просто, чтобы повидать родных.
-					</div>
-
-					<a href="#"><button class="link-btn">Читать больше</button></a>
+				<div class="news__cards__block">
+					<h2 class="news__cards__block__title">ЗАГОЛОВОК</h2>
+					<p class="news__cards__block__description">
+						Lorem ipsum dolor sit amet consectetur adipisicing.
+					</p>
 				</div>
 				
-			</div>
-
-			<div class="card culture-card wow animate__animated animate__fadeInUp" data-wow-offset="150">
-
-				<div class="content">
-
-					<h3 class="title">КУЛЬТУРА</h3>
-
-					<div class="text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minus natus consectetur maxime sapiente sint beatae reiciendis error quasi! Rerum non animi, rem consequatur ea saepe alias explicabo! Provident qui voluptatum, veniam doloribus, repudiandae deleniti consequuntur ab maiores nesciunt, alias mollitia? Est tenetur voluptatem sequi eius praesentium, quo, aperiam, iusto facilis totam voluptatum illo. Quam quaerat, accusamus nobis ipsum ut odit itaque dolorum illo vel laudantium? Accusantium corrupti, nobis voluptatem molestiae unde aliquid quod! Ea laborum nesciunt numquam necessitatibus consequatur. Veniam doloribus, repudiandae deleniti consequuntur ab maiores nesciunt, alias mollitia? Est tenetur voluptatem sequi eius praesentium, quo, aperiam, iusto facilis totam voluptatum illo. Quam quaerat, accusamus nobis ipsum ut odit itaque dolorum illo vel laudantium? Accusantium corrupti, nobis voluptatem molestiae unde aliquid quod! Ea laborum nesciunt numquam necessitatibus consequatur.
-					</div>
-
-					<a href="#"><button class="link-btn">Читать больше</button></a>
+				<div class="news__cards__block">
+					<h2 class="news__cards__block__title">ЗАГОЛОВОК</h2>
+					<p class="news__cards__block__description">
+						Lorem ipsum dolor sit amet consectetur adipisicing.
+					</p>
 				</div>
-
-				<div class="image"></div>
-
-			</div>
-
-			<div class="card language-card wow animate__animated animate__fadeInUp" data-wow-offset="150">
-
-				<div class="image"></div>
-
-				<div class="content">
-
-					<h3 class="title">НА КАКОМ ЯЗЫКЕ ГОВОРЯТ УДИНЫ? </h3>
-
-					<div class="text">
-						Удины разговаривают на удинском языке.
-						<br><br>
-						Сейчас официально язык считается бесписьменным, хотя в V веке именно на основе удинского языка появилась албанская письменность. Алфавит состоял из 52 букв и  получил широкое применение: на албанский язык  были переведены важнейшие библейские тексты, на нём велась церковная служба.
-						<br> <br>
-						Но  в силу исторических событий албанская письменность перестала использоваться, а потом и вовсе исчезла. Сейчас удины заново составили словарь, азбуку на базе кириллицы, и переводят  на удинский язык  Библию. 
-
-					</div>
-
-					<a 
-						href="https://ru.wikipedia.org/wiki/%D0%A3%D0%B4%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA"
-						target="_blank"
-					>
-						<button class="link-btn">Читать больше в Википедии</button>
-					</a>
+				
+				<div class="news__cards__block">
+					<h2 class="news__cards__block__title">ЗАГОЛОВОК</h2>
+					<p class="news__cards__block__description">
+						Lorem ipsum dolor sit amet consectetur adipisicing.
+					</p>
 				</div>
 			</div>
 		</div>
 
-		<!-- SCHOOL BLOCK -->
-		<div class="school school-card wow animate__animated animate__fadeInUp" data-wow-offset="150">
-			<h3 class="title-block">ВОСКРЕСНАЯ ШКОЛА УДИНСКОГО ЯЗЫКА</h3>
-
-			<div class="card">
-				<div class="content">
-					<h3 class="title">ПРИГЛАШАЕМ ВСЕХ</h3>
-
-					<div class="text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt iusto neque in quisquam et, nostrum aspernatur, officia impedit adipisci laborum, reprehenderit praesentium, cupiditate! Voluptatibus, error repellendus necessitatibus porro vel aperiam enim. Assumenda tempore nisi ullam doloribus fugiat atque voluptates, commodi mollitia iusto explicabo harum, eveniet sint fugit veritatis animi est veniam perferendis sapiente porro. Deleniti tempore reprehenderit, possimus ut at voluptatem voluptatum odio, ipsum tenetur non eaque quis! 
-					</div>
-
-					<div class="contacts">
-						<div class="phone">Записаться по номеру: <a href="#">+7 (XXX) XXX XX XX</a></div>
-						<div class="mail">Почта: <a href="#">example@mail.com</a></div>
-					</div>
-
-					<a href="#"><button class="link-btn">ЗАПИСАТЬСЯ</button></a>
+		<div class="posts">
+			<div class="post">
+				<div class="post__text-part">
+					<h2 class="post__text-part__title">ЗАГОЛОВОК</h2>
+					<div class="post__text-part__text">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Rerum laborum, eius, ut nesciunt accusamus quas harum repellat voluptatibus, recusandae impedit dolorum. Itaque repellat aperiam pariatur eos quod, at labore eligendi adipisci odio, delectus eaque error?</div>
 				</div>
-				<div class="image">
-					
+
+				<img src="assets/img/azer2.jpg" alt="Alternative text" class="post__image-part">
+			</div>
+			<div class="post post--even">
+				<div class="post__text-part">
+					<h2 class="post__text-part__title">ЗАГОЛОВОК</h2>
+					<div class="post__text-part__text">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Rerum laborum, eius, ut nesciunt accusamus quas harum repellat voluptatibus, recusandae impedit dolorum. Itaque repellat aperiam pariatur eos quod, at labore eligendi adipisci odio, delectus eaque error?</div>
+				</div>
+
+				<img src="assets/img/azer2.jpg" alt="Alternative text" class="post__image-part">
+			</div>
+			<div class="post">
+				<div class="post__text-part">
+					<h2 class="post__text-part__title">ЗАГОЛОВОК</h2>
+					<div class="post__text-part__text">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Rerum laborum, eius, ut nesciunt accusamus quas harum repellat voluptatibus, recusandae impedit dolorum. Itaque repellat aperiam pariatur eos quod, at labore eligendi adipisci odio, delectus eaque error?</div>
+				</div>
+
+				<img src="assets/img/azer2.jpg" alt="Alternative text" class="post__image-part">
+			</div>
+			<div class="post post--even">
+				<div class="post__text-part">
+					<h2 class="post__text-part__title">ЗАГОЛОВОК</h2>
+					<div class="post__text-part__text">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Rerum laborum, eius, ut nesciunt accusamus quas harum repellat voluptatibus, recusandae impedit dolorum. Itaque repellat aperiam pariatur eos quod, at labore eligendi adipisci odio, delectus eaque error?</div>
+				</div>
+
+				<img src="assets/img/azer2.jpg" alt="Alternative text" class="post__image-part">
+			</div>
+			<div class="post">
+				<div class="post__text-part">
+					<h2 class="post__text-part__title">ЗАГОЛОВОК</h2>
+					<div class="post__text-part__text">Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Rerum laborum, eius, ut nesciunt accusamus quas harum repellat voluptatibus, recusandae impedit dolorum. Itaque repellat aperiam pariatur eos quod, at labore eligendi adipisci odio, delectus eaque error?</div>
+				</div>
+
+				<img src="assets/img/azer2.jpg" alt="Alternative text" class="post__image-part">
+			</div>
+		</div>
+
+		<div class="school">
+			<h1 class="school__title">ВОСКРЕСНАЯ ШКОЛА УДИНСКОГО ЯЗЫКА</h1>
+			<p class="school__text">
+				Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Est quia ratione ut quasi earum cumque, vel facere nesciunt placeat fugit ipsam, beatae dolorem sint omnis quos tempore accusantium labore debitis nam reiciendis asperiores quaerat consequuntur iste minima possimus? Reiciendis id, saepe, necessitatibus officiis molestiae illo.
+			</p>
+			<div class="school__link-board">
+				<div class="school__link-board__item school__link-board__mail">
+					<b>Почта:</b> <a href="#">example@example.com</a>
+				</div>
+				<div class="school__link-board__item school__link-board__phone">
+					<b>Позвонить:</b> <a href="#">+7 (XXX) XXX XX XX</a>
 				</div>
 			</div>
 		</div>
 
-		<!-- FOOTER -->
 		<div class="footer">
-			<a href="#"><img class="link-img" src="assets/css/img/ico/instagram.svg"></a>
-			<a href="#"><img class="link-img" src="assets/css/img/ico/facebook.svg"></a>
-			<a href="#"><img class="link-img" src="assets/css/img/ico/vk.svg"></a>
-			<a href="#"><img class="link-img" src="assets/css/img/ico/ok.svg"></a>
+			<a href="#" target="_blank">Creators</a>
 		</div>
-
 	</div>
 
-	<!-- MAIN JS SCRIPT -->
 	<script src="assets/js/app.js"></script>
-
-	<!-- WOW.JS -->
-	<script src="assets/js/wow.min.js"></script>
-    
-    <script>
-		new WOW().init();
-	</script>
-
-
 </body>
 </html>

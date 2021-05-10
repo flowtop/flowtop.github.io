@@ -1,58 +1,17 @@
-// MENU
 let 
-	menu        = document.querySelector(".nav-bar"),
-	menuBtnRows = document.querySelectorAll(".menu-btn .btn-row");
+	menuBtn = document.querySelector(".intro__go-btn"),
+	menu    = document.querySelector(".intro__menu"),
+	title = document.querySelector(".intro__title");
+	
 
-function sideMenu () {
-	menu.classList.toggle("opened");
+menuBtn.onclick = () => {
+	if (menuBtn.innerText == "МЕНЮ") {
+		menuBtn.innerText = "ОБРАТНО";
+	}
+	else {
+		menuBtn.innerText = "МЕНЮ";
+	}
 
-	menuBtnRows.forEach(i => {
-		i.classList.toggle("opened");
-	});
+	menu.classList.toggle("intro__menu--closed");
+	title.classList.toggle("intro__title--closed");
 }
-
-// SMOOTH-SCROLL
-document.addEventListener("click", function(e) {
-
-	if (e.target.classList.contains("nav-item--main")) {
-		
-		document.querySelector(".wrapper").scrollIntoView({
-    		behavior: "smooth",
-    		block: "start"
-		});
-	}
-
-	if (e.target.classList.contains("nav-item--about")) {
-		
-		document.querySelector(".info").scrollIntoView({
-    		behavior: "smooth",
-    		block: "start"
-		});
-	}
-
-	if (e.target.classList.contains("nav-item--history")) {
-		
-		document.querySelector(".history-card").scrollIntoView({
-    		behavior: "smooth",
-    		block: "start"
-		});
-	}
-
-	if (e.target.classList.contains("nav-item--culture")) {
-		
-		document.querySelector(".culture-card").scrollIntoView({
-    		behavior: "smooth",
-    		block: "start"
-		});
-	}
-
-	if (e.target.classList.contains("nav-item--school")) {
-		
-		document.querySelector(".school-card").scrollIntoView({
-    		behavior: "smooth",
-    		block: "start"
-		});
-	}
-
-
-});
