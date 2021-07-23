@@ -6,9 +6,17 @@
           box-sizing: border-box;
 }
 
+::-moz-selection {
+  background-color: #031803;
+}
+
+::selection {
+  background-color: #031803;
+}
+
 .wrapper {
-  height: 10000px;
   background-color: #000;
+  overflow-x: hidden;
 }
 .wrapper header {
   z-index: 10;
@@ -56,6 +64,12 @@
 .wrapper header nav a:hover {
   opacity: 100%;
 }
+.wrapper header .menu-btn {
+  display: none;
+  font-size: 30px;
+  text-shadow: 0px 0px 6px #36c747;
+  cursor: pointer;
+}
 .wrapper .intro {
   height: 100vh;
   padding: 120px;
@@ -75,7 +89,7 @@
 }
 .wrapper .intro .title {
   font-size: 64px;
-  color: #16cc2b;
+  color: #0af125;
   text-shadow: 0px 0px 5px #36c747;
   margin-bottom: 20px;
 }
@@ -91,35 +105,124 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  padding: 13px 30px;
+  text-align: left;
+  width: 150px;
   margin-top: 50px;
   text-decoration: none;
-  border: 1px solid #00ff1e;
   border-radius: 15px;
   color: #00ff1e;
-  width: 160px;
   font-weight: bold;
-  -webkit-box-shadow: 0px 0px 5px 1px #16cc2b, 0px 0px 15px 1px #16cc2b, 0px 0px 25px 1px #16cc2b, inset 0px 0px 5px 1px #16cc2b, inset 0px 0px 15px 1px #16cc2b;
-          box-shadow: 0px 0px 5px 1px #16cc2b, 0px 0px 15px 1px #16cc2b, 0px 0px 25px 1px #16cc2b, inset 0px 0px 5px 1px #16cc2b, inset 0px 0px 15px 1px #16cc2b;
+  font-size: 20px;
   text-shadow: 0px 0px 5px #3ad84f;
   opacity: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
-.wrapper .experience {
+.wrapper .aboutme {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px;
+}
+.wrapper .aboutme * {
+  z-index: 5;
+}
+.wrapper .aboutme .info-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  padding-top: 120px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.wrapper .experience p {
+.wrapper .aboutme .info-col .title {
+  color: #0af125;
+  text-shadow: 0px 0px 5px #36c747;
+  margin-bottom: 20px;
+}
+.wrapper .aboutme .info-col .description {
   color: #16cc2b;
+  text-shadow: 0px 0px 5px #3ad84f;
+  opacity: 60%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  max-width: 600px;
+}
+.wrapper .aboutme .img-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .aboutme .img-col i {
+  color: #0af125;
+  text-shadow: 0px 0px 5px #36c747;
+  font-size: 144px;
+}
+
+@media (max-width: 1200px) {
+  .wrapper header {
+    padding: 15px 7vw !important;
+  }
+  .wrapper header nav {
+    display: none;
+  }
+  .wrapper header .menu-btn {
+    display: block;
+  }
+  .wrapper .intro {
+    padding: 7vw;
+  }
+  .wrapper .aboutme {
+    padding: 7vw;
+  }
+}
+@media (max-width: 650px) {
+  .wrapper .aboutme {
+    -ms-grid-rows: 1fr 40px 1fr;
+    grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .wrapper .aboutme > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .wrapper .aboutme > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .wrapper .aboutme .info-col {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .wrapper .aboutme .img-col {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper .intro .title {
+    font-size: 42px;
+  }
 }

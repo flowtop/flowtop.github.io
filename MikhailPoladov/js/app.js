@@ -1,15 +1,4 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
+// PARTICLES.js
 
 particlesJS('particles-js', {
         "particles": {
@@ -124,25 +113,42 @@ particlesJS('particles-js', {
 
 );
 
+// TYPED.js
+
 window.onload = () => {
-    let title = new Typed('.title', {
-        // Waits 1000 ms after typing "First"
+    let title = new Typed('.intro .title', {
         strings: ["", "Добро пожаловать!"],
         typeSpeed: 30,
-        loop: false
-
+        loop: false,
+        showCursor: false
     });
 
     setTimeout(() => {
         if (title.typingComplete) {
+            let title = new Typed('.intro .description', {
+                strings: ["", "Меня зовут Михаил, я Junior Frontend Web-разработчик."],
+                typeSpeed: 15,
+                loop: false,
+                showCursor: false
+            });
             document.querySelector(".intro .description").style.opacity = "60%";
         }
 
         setTimeout(() => {
             if (title.typingComplete) {
+                let title = new Typed('.intro .start-btn', {
+                    strings: ["", ">>> контакты"],
+                    typeSpeed: 30,
+                    loop: false,
+                    showCursor: false
+                });
                 document.querySelector(".intro .start-btn").style.opacity = "100%";
             }
         }, 2000);
 
     }, 2000);
 }
+
+// WOW.js
+
+new WOW().init()
