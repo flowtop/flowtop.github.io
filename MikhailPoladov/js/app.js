@@ -152,3 +152,26 @@ window.onload = () => {
 // WOW.js
 
 new WOW().init()
+
+// Swiper.js
+
+if (window.screen.width > 1200) {
+    const swiper = new Swiper('.swiper-container', {
+        speed: 1000,
+        loop: true,
+        autoplay: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        spaceBetween: 100
+    });
+}
+else {
+    const swiper = new Swiper('.swiper-container', {
+        speed: 1000,
+        loop: true,
+        autoplay: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 100
+    });
+}
