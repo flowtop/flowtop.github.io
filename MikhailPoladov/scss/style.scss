@@ -5,6 +5,23 @@
     box-sizing: border-box;
 }
 
+:root {
+    --swiper-theme-color: #0af125b3;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    text-shadow: 0px 0px 15px #0af125b3 !important;
+    opacity: 60%;
+}
+
+.swiper-button-next::after {
+    margin-right: 2vw;
+}
+
+.swiper-button-prev::after {
+    margin-left: 2vw;
+}
+
 ::selection {
     background-color: #031803;
 }
@@ -205,9 +222,6 @@
         .swiper-container {
             padding: 0 120px;
             text-align: center;
-            box-shadow: 0px 0px 5px 1px #00ff1e,
-                        0px 0px 25px 1px #00ff1e,
-                        0px 0px 45px 1px #00ff1e;
 
             .swiper-wrapper {
 
@@ -231,6 +245,32 @@
                         max-width: 500px;
                         margin: 0 auto;
                         margin-bottom: 20px;
+                    }
+
+                    .stack {
+                        margin-bottom: 30px;
+
+                        h1 {
+                            font-size: 30px;
+                            color: #0af125;
+                            text-shadow: 0px 0px 5px #36c747;
+                            margin-bottom: 20px;
+                        }
+                        
+                        .stack-item {
+                            font-size: 22px;
+                            color: #16cc2b;
+                            text-shadow: 0px 0px 5px #3ad84f;
+                            opacity: 80%;
+                            transition: all 0.2s ease;
+                            margin-bottom: 5px;
+                            cursor: pointer;
+                        }
+
+                        .stack-item:hover {
+                            opacity: 100%;
+                            text-shadow: 0px 0px 5px #0af329;
+                        }
                     }
 
                     a {

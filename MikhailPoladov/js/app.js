@@ -116,6 +116,7 @@ particlesJS('particles-js', {
 // TYPED.js
 
 window.onload = () => {
+    
     let title = new Typed('.intro .title', {
         strings: ["", "Добро пожаловать!"],
         typeSpeed: 30,
@@ -137,8 +138,8 @@ window.onload = () => {
         setTimeout(() => {
             if (title.typingComplete) {
                 let title = new Typed('.intro .start-btn', {
-                    strings: ["", ">>> контакты"],
-                    typeSpeed: 30,
+                    strings: ["", ">>> связаться"],
+                    typeSpeed: 15,
                     loop: false,
                     showCursor: false
                 });
@@ -149,29 +150,18 @@ window.onload = () => {
     }, 2000);
 }
 
-// WOW.js
-
-new WOW().init()
-
 // Swiper.js
 
-if (window.screen.width > 1200) {
-    const swiper = new Swiper('.swiper-container', {
-        speed: 1000,
-        loop: true,
-        autoplay: true,
-        centeredSlides: true,
-        slidesPerView: 3,
-        spaceBetween: 100
-    });
-}
-else {
-    const swiper = new Swiper('.swiper-container', {
-        speed: 1000,
-        loop: true,
-        autoplay: true,
-        centeredSlides: true,
-        slidesPerView: 1,
-        spaceBetween: 100
-    });
-}
+const swiper = new Swiper('.swiper-container', {
+    speed: 1000,
+    loop: true,
+    autoplay: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    spaceBetween: 100,
+    effect: "flip",
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+});
