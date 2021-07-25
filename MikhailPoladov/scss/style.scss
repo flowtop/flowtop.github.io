@@ -70,9 +70,15 @@
 
         .menu-btn {
             display: none;
-            font-size: 30px;
-            text-shadow: 0px 0px 6px #36c747;
             cursor: pointer;
+
+            &__bar {
+                height: 3px;
+                width: 30px;
+                background-color: #0af125;
+                margin: 7px 0;
+                box-shadow: 0px 0px 5px 1px #36c747;
+            }
         }
     }
 
@@ -114,176 +120,8 @@
             font-weight: bold;
             font-size: 20px;
             text-shadow: 0px 0px 5px #3ad84f;
-            opacity: 0;
+            opacity: 0%;
             transition: all 1s ease;
-        }
-    }
-
-    .aboutme {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 120px;
-
-        * {
-            z-index: 5;
-        }
-
-        .info-col {
-            display: flex;
-            flex-direction: column;
-
-            .title {
-                color: #0af125;
-                text-shadow: 0px 0px 5px #36c747;
-                margin-bottom: 20px;
-
-                i {
-                    font-size: 30px;
-                    margin-right: 10px;
-                }
-            }
-
-            .description {
-                font-size: 18px;
-                color: #16cc2b;
-                text-shadow: 0px 0px 5px #3ad84f;
-                opacity: 60%;
-                transition: all 1s ease;
-                max-width: 600px;
-            }
-        }
-
-        .img-col {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            
-            i {
-                color: #0af125;
-                text-shadow: 0px 0px 5px #36c747;
-                font-size: 144px;
-            }
-        }
-    }
-
-    .works-intro {
-        padding: 10px 120px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
-        .info-col {
-            display: flex;
-            flex-direction: column;
-
-            .title {
-                opacity: 99%;
-                color: #0af125;
-                text-shadow: 0px 0px 5px #36c747;
-                margin-bottom: 20px;
-
-                i {
-                    font-size: 30px;
-                    margin-right: 10px;
-                }
-            }
-
-            .description {
-                font-size: 18px;
-                color: #16cc2b;
-                text-shadow: 0px 0px 5px #3ad84f;
-                opacity: 60%;
-                transition: all 1s ease;
-                max-width: 600px;
-            }
-        }
-
-        .img-col {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            
-            i {
-                opacity: 99%;
-                color: #0af125;
-                text-shadow: 0px 0px 5px #36c747;
-                font-size: 144px;
-            }
-        }
-
-    }
-
-    .works {
-        padding: 120px 0;
-
-        * {
-            z-index: 5;
-        }
-
-        .swiper-container {
-            padding: 0 120px;
-            text-align: center;
-
-            .swiper-wrapper {
-
-                .swiper-slide {
-                    color: #00ff1e;
-                    padding: 60px 30px;
-                    background-color: transparent;
-                    text-align: center;
-
-                    .title {
-                        color: #0af125;
-                        text-shadow: 0px 0px 5px #36c747;
-                        margin-bottom: 20px;
-                    }
-
-                    .description {
-                        font-size: 18px;
-                        color: #16cc2b;
-                        text-shadow: 0px 0px 5px #3ad84f;
-                        opacity: 60%;
-                        max-width: 500px;
-                        margin: 0 auto;
-                        margin-bottom: 20px;
-                    }
-
-                    .stack {
-                        margin-bottom: 30px;
-
-                        h1 {
-                            font-size: 30px;
-                            color: #0af125;
-                            text-shadow: 0px 0px 5px #36c747;
-                            margin-bottom: 20px;
-                        }
-                        
-                        .stack-item {
-                            font-size: 22px;
-                            color: #16cc2b;
-                            text-shadow: 0px 0px 5px #3ad84f;
-                            opacity: 80%;
-                            transition: all 0.2s ease;
-                            margin-bottom: 5px;
-                            cursor: pointer;
-                        }
-
-                        .stack-item:hover {
-                            opacity: 100%;
-                            text-shadow: 0px 0px 5px #0af329;
-                        }
-                    }
-
-                    a {
-                        width: 150px;
-                        text-decoration: none;
-                        border-radius: 15px;
-                        color: #00ff1e;
-                        font-weight: bold;
-                        font-size: 20px;
-                        text-shadow: 0px 0px 5px #3ad84f;
-                    }
-                }
-            }
         }
     }
 }
@@ -308,61 +146,12 @@
         .intro {
             padding: 7vw;
         }
-
-        .aboutme {
-            padding: 7vw;
-        }
-
-        .works {
-            padding: 7vw 0;
-
-            .swiper-container {
-                padding: 0 7vw;
-            }
-        }
-
-        .works-intro {
-            padding: 10px 7vw;
-        }
     }
 }
 
 @media (max-width: 650px) {
     .wrapper {
 
-        .aboutme {
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr;
-            grid-gap: 40px;
-
-            .info-col {
-                grid-row: 2/3;
-                justify-content: center;
-                text-align: center;
-            }
-
-            .img-col {
-                justify-content: center;
-                grid-row: 1/2;
-            }
-        }
-
-        .works-intro {
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr;
-            grid-gap: 40px;
-
-            .info-col {
-                grid-row: 2/3;
-                justify-content: center;
-                text-align: center;
-            }
-
-            .img-col {
-                justify-content: center;
-                grid-row: 1/2;
-            }
-        }
     }
 }
 

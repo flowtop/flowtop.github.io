@@ -149,19 +149,3 @@ window.onload = () => {
 
     }, 2000);
 }
-
-// Swiper.js
-
-const swiper = new Swiper('.swiper-container', {
-    speed: 1000,
-    loop: true,
-    autoplay: true,
-    centeredSlides: true,
-    slidesPerView: 3,
-    spaceBetween: 100,
-    effect: "flip",
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    }
-});
