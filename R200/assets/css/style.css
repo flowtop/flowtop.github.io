@@ -455,6 +455,7 @@
 }
 .wrapper .tasks .tasks-text p {
   margin-top: 50px;
+  text-align: justify;
 }
 .wrapper .contacts {
   font-size: 18px;
