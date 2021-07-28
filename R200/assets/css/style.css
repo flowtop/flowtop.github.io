@@ -750,14 +750,21 @@
   .wrapper .found-cheaper {
     padding: 7vw;
   }
+  .wrapper .found-cheaper__btn {
+    padding: 70px;
+  }
+  .wrapper .found-cheaper__btn__content {
+    font-size: 18px;
+  }
   .wrapper .tasks {
     padding: 0 7vw 7vw;
   }
   .wrapper .tasks .tasks-list {
-    -ms-grid-columns: 1fr 50px 1fr;
+    -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 1fr 50px 1fr 50px 1fr 50px 1fr 50px 1fr;
+    -ms-grid-rows: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
     grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
   }
   .wrapper .tasks .tasks-list > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -800,7 +807,7 @@
     -ms-grid-column: 3;
   }
   .wrapper .tasks .tasks-list .task {
-    font-size: 24px;
+    font-size: 16px;
   }
   .wrapper .contacts {
     padding: 7vw;
@@ -809,15 +816,13 @@
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .wrapper .adv .adv-title {
     font-size: 28px;
   }
   .wrapper .found-cheaper__btn {
-    padding: 80px 50px;
+    padding: 80px !important;
     width: 700px;
-    border: 4px solid #1a65a8;
-    border-radius: 10px;
     cursor: pointer;
   }
   .wrapper .found-cheaper__btn__content {
@@ -825,54 +830,63 @@
     text-align: center;
     background-color: #1a65a8;
     color: #ffffff;
-    border-radius: 10px;
-    font-size: 22px;
+    font-size: 18px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 370px) {
   .tasks .tasks-list {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (1fr)[9];
-    grid-template-rows: repeat(9, 1fr);
+    -ms-grid-columns: 1fr !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    -ms-grid-rows: 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr 5px 1fr !important;
+    grid-template-rows: repeat(9, 1fr) !important;
+    grid-gap: 5px;
   }
   .tasks .tasks-list > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
   .tasks .tasks-list > *:nth-child(2) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  .tasks .tasks-list > *:nth-child(3) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
-  .tasks .tasks-list > *:nth-child(4) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-  }
-  .tasks .tasks-list > *:nth-child(5) {
+  .tasks .tasks-list > *:nth-child(3) {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
   }
-  .tasks .tasks-list > *:nth-child(6) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-  }
-  .tasks .tasks-list > *:nth-child(7) {
+  .tasks .tasks-list > *:nth-child(4) {
     -ms-grid-row: 7;
     -ms-grid-column: 1;
   }
-  .tasks .tasks-list > *:nth-child(8) {
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
-  }
-  .tasks .tasks-list > *:nth-child(9) {
+  .tasks .tasks-list > *:nth-child(5) {
     -ms-grid-row: 9;
     -ms-grid-column: 1;
   }
+  .tasks .tasks-list > *:nth-child(6) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+  }
+  .tasks .tasks-list > *:nth-child(7) {
+    -ms-grid-row: 13;
+    -ms-grid-column: 1;
+  }
+  .tasks .tasks-list > *:nth-child(8) {
+    -ms-grid-row: 15;
+    -ms-grid-column: 1;
+  }
+  .tasks .tasks-list > *:nth-child(9) {
+    -ms-grid-row: 17;
+    -ms-grid-column: 1;
+  }
   .tasks .tasks-list .task {
-    font-size: 24px;
+    font-size: 18px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

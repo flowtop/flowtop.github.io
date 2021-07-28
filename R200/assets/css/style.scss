@@ -591,6 +591,14 @@
 
         .found-cheaper {
             padding: 7vw;
+
+            &__btn {
+                padding: 70px;
+
+                &__content {
+                    font-size: 18px;
+                }
+            }
         }
 
         .tasks {
@@ -600,8 +608,10 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(5, 1fr);
 
+                grid-gap: 10px;
+
                 .task {
-                    font-size: 24px;
+                    font-size: 16px;
                 }
             }
         }
@@ -621,7 +631,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .wrapper {
         .adv {
             .adv-title {
@@ -632,10 +642,8 @@
         .found-cheaper {
 
             &__btn {
-                padding: 80px 50px;
+                padding: 80px !important;
                 width: 700px;
-                border: 4px solid #1a65a8;
-                border-radius: 10px;
                 cursor: pointer;
 
                 &__content {
@@ -643,23 +651,26 @@
                     text-align: center;
                     background-color: #1a65a8;
                     color: #ffffff;
-                    border-radius: 10px;
-                    font-size: 22px;
+                    font-size: 18px;
                 }
             }
         }
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 370px) {
     .tasks {
 
         .tasks-list {
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(9, 1fr);
+            grid-template-columns: repeat(1, 1fr) !important;
+            grid-template-rows: repeat(9, 1fr) !important;
+            grid-gap: 5px;
 
             .task {
-                font-size: 24px;
+                font-size: 18px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
     }
