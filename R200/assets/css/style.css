@@ -767,8 +767,10 @@
   }
   .wrapper .contacts .other-contacts a img {
     margin-right: 15px;
-    margin-left: 30px;
     display: block;
+  }
+  .wrapper .contacts .other-contacts a img[src="assets/img/viber.png"] {
+    padding-left: 30px;
   }
 }
 @media (max-width: 770px) {
