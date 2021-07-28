@@ -49,6 +49,94 @@
   border-radius: 10px;
   cursor: pointer;
 }
+.wrapper header .menu-btn {
+  display: none;
+}
+.wrapper .side-menu {
+  padding: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1a65a8;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  z-index: 99999;
+}
+.wrapper .side-menu .logo {
+  margin-bottom: 25px;
+}
+.wrapper .side-menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.wrapper .side-menu nav .nav-item {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px 10px;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+.wrapper .side-menu nav .nav-item i {
+  margin-left: 10px;
+}
+.wrapper .side-menu .number-btn {
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.wrapper .side-menu .cart {
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.wrapper .side-menu .mail {
+  margin-top: 25px;
+}
+.wrapper .side-menu .time {
+  margin-top: 25px;
+}
+.wrapper .side-menu .number {
+  margin-top: 10px;
+}
+.wrapper .side-menu .close-btn {
+  position: fixed;
+  top: 25px;
+  right: 50px;
+  font-size: 30px;
+  cursor: pointer;
+}
 .wrapper .intro {
   padding: 50px;
   padding-bottom: 0;
@@ -57,20 +145,6 @@
   -ms-grid-columns: 3fr 50px 11fr;
   grid-template-columns: 3fr 11fr;
   grid-gap: 50px;
-}
-.wrapper .intro .sidebar .sidebar-menu {
-  display: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-  padding: 15px 30px;
-  background-color: #1a65a8;
-  color: #ffffff;
-  font-size: 24px;
-}
-.wrapper .intro .sidebar .sidebar-menu .sidebar-menu-btn {
-  cursor: pointer;
 }
 .wrapper .intro .sidebar nav {
   display: -webkit-box;
@@ -120,6 +194,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: justify;
 }
 .wrapper .intro .info .info-main .main-img {
   display: -webkit-box;
@@ -137,6 +212,7 @@
 }
 .wrapper .intro .info .info-addit {
   margin-top: 50px;
+  text-align: justify;
 }
 .wrapper .intro .info .intro-contacts {
   display: -webkit-box;
@@ -326,7 +402,7 @@
   font-size: 22px;
 }
 .wrapper .tasks {
-  padding: 0 50px 50px;
+  padding: 0 50px 0;
 }
 .wrapper .tasks .tasks-stroke {
   height: 1px;
@@ -337,6 +413,7 @@
 }
 .wrapper .tasks .tasks-title {
   font-size: 18px;
+  text-align: justify;
 }
 .wrapper .tasks .tasks-list {
   display: -ms-grid;
@@ -374,6 +451,7 @@
 }
 .wrapper .tasks .tasks-text {
   font-size: 18px;
+  text-align: justify;
 }
 .wrapper .tasks .tasks-text p {
   margin-top: 50px;
@@ -390,7 +468,6 @@
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 50px;
-  padding-top: 0;
 }
 .wrapper .contacts .contacts-btn {
   padding: 20px 40px;
@@ -482,38 +559,6 @@
     padding: 15px 30px;
     font-size: 18px;
   }
-}
-@media (max-width: 1250px) {
-  .wrapper .intro .info .info-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .wrapper .intro .info .info-main .main-img img {
-    width: 100%;
-  }
-  .wrapper .intro .info .intro-contacts {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .wrapper .intro .info .intro-contacts .contacts-btn {
-    margin-bottom: 30px;
-  }
-  .wrapper .adv .row .element .content {
-    font-size: 20px;
-  }
   .wrapper .tasks .tasks-list {
     -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
     grid-template-columns: repeat(3, 1fr);
@@ -559,6 +604,78 @@
   .wrapper .tasks .tasks-list .task {
     font-size: 20px;
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 1250px) {
+  .wrapper .side-menu {
+    display: none;
+  }
+}
+@media (max-width: 1250px) {
+  .wrapper header .menu-btn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .wrapper header .time, .wrapper header .email, .wrapper header .number, .wrapper header .end-part {
+    display: none;
+  }
+  .wrapper .side-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper .side-menu.hidden {
+    display: none;
+  }
+  .wrapper .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7vw;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .wrapper .intro .sidebar {
+    z-index: 999;
+  }
+  .wrapper .intro .sidebar nav {
+    display: none;
+  }
+  .wrapper .intro .info .info-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .wrapper .intro .info .info-main .main-img img {
+    width: 100%;
+  }
+  .wrapper .intro .info .intro-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .wrapper .intro .info .intro-contacts .contacts-btn {
+    margin-bottom: 30px;
+  }
+  .wrapper .adv .row .element .content {
+    font-size: 20px;
   }
   .wrapper .contacts {
     -webkit-box-orient: vertical;
@@ -654,46 +771,15 @@
   }
 }
 @media (max-width: 770px) {
-  .wrapper .intro {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .wrapper header {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+  .wrapper .side-menu {
     padding: 7vw;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
   }
-  .wrapper .intro .sidebar {
-    z-index: 999;
-  }
-  .wrapper .intro .sidebar .sidebar-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .wrapper .intro .sidebar nav {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-  }
-  .wrapper .intro .sidebar nav .close-btn {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
-    font-size: 24px;
-    color: #ffffff;
-  }
-  .wrapper .intro .sidebar nav.hidden {
-    display: none;
+  .wrapper .side-menu .close-btn {
+    right: 7vw;
   }
   .wrapper .adv {
     padding: 7vw;
@@ -751,13 +837,13 @@
     padding: 7vw;
   }
   .wrapper .found-cheaper__btn {
-    padding: 70px;
+    padding: 60px;
   }
   .wrapper .found-cheaper__btn__content {
     font-size: 18px;
   }
   .wrapper .tasks {
-    padding: 0 7vw 7vw;
+    padding: 0 7vw 0;
   }
   .wrapper .tasks .tasks-list {
     -ms-grid-columns: 1fr 10px 1fr;
@@ -817,16 +903,19 @@
   }
 }
 @media (max-width: 400px) {
+  .wrapper header .logo {
+    font-size: 30px;
+  }
   .wrapper .adv .adv-title {
     font-size: 28px;
   }
   .wrapper .found-cheaper__btn {
-    padding: 80px !important;
+    padding: 50px !important;
     width: 700px;
     cursor: pointer;
   }
   .wrapper .found-cheaper__btn__content {
-    padding: 80px 50px;
+    padding: 50px 50px;
     text-align: center;
     background-color: #1a65a8;
     color: #ffffff;
