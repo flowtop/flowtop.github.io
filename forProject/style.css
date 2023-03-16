@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: #06070F;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    color: #FFFFFF;
+}
+
+.logo {
+    font-size: 42px;
+}
+
+.login {
+    font-size: 18px;
+    padding: 15px 70px;
+    border-radius: 30px;
+    background-color: #394499af;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.nav-bar {
+    padding: 10px 50px;
+    background-color: #444e943a;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar ul li {
+    color: #ffffffb3;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-bar ul li a {
+    color: #ffffffb3;
+}
+
+.nav-bar ul li:hover {
+    color: #FFFFFF;
+}
+
+.catalog {
+    padding: 50px;
+}
+
+.poster {
+    display: flex;
+}
+
+.poster-image {
+    width: 500px;
+    opacity: 70%;
+}
+
+.poster-text {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.poster-text .poster-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.poster-info .info-title {
+    color: #FFFFFF;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.poster-info .info-description {
+    color: #ffffff91;
+    font-size: 18px;
+}
+
+.poster-info .info-rate {
+    color: #ffffffaf;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.poster-info .info-rate span {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.poster-info .info-price {
+    color: #ffffffaf;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.poster-info .info-price span {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.poster-buy-btn {
+    font-size: 18px;
+    padding: 15px 70px;
+    border-radius: 30px;
+    background-color: #394499af;
+    color: #FFFFFF;
+    max-width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #090b1b;
+    padding: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .copyright {
+    color: #FFFFFFaf;
+    font-size: 20px;
+}
+
+.author {
+    color: #FFFFFFaf;
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    .poster {
+        flex-direction: column;
+    }
+
+    .poster-text {
+        padding: 30px 0;
+    }
+
+    .poster-buy-btn {
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header, .catalog, .nav-bar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header .logo {
+        font-size: 26px;
+    }
+
+    .header .login {
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+
+    .nav-bar ul {
+        justify-content: space-around;
+    }
+    .nav-bar ul li {
+        font-size: 18px;
+    }
+
+    .poster-image {
+        width: 100%;
+    }
+    
+    .poster-buy-btn {
+        max-width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+}
