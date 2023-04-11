@@ -26,6 +26,10 @@
     transition: all 0.3s ease;
 } .nav-link:hover {color: #7d38cc}
 
+.nav-link.login-link {
+    margin-top: -15px;
+    margin-left: 10px;
+}
 
 .nav-menu-btn {
     display: none;
@@ -106,6 +110,9 @@
 .side-menu-nav-link {
     font-size: 32px;
     color: #FF8C01;
+}
+.side-menu-nav-link.login-link {
+    margin-top: 10px;
 }
 
 
