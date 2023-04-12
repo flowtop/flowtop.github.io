@@ -1,0 +1,218 @@
+.freelancers-list {
+    padding: 200px 110px 100px 110px;
+}
+
+.freelancers-list-title {
+    font-size: 64px;
+}
+
+.freelancers-list-title .title-freelancer-type {
+    border: none;
+    outline: none;
+    font-size: 44px;
+    padding: 25px 60px;
+    color: #FF8C01;
+    border: 5px solid #FF8C01;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.freelancers-list .change-type-wrapper {
+    margin-top: 40px;
+}
+
+.freelancers-list .change-type {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 32px;
+    padding: 25px 40px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work-types {
+    display: none;
+}
+.work-types.active {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 40px;
+    font-size: 32px;
+    gap: 10px; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+.work-types .list-link {
+    color: #000000;
+    cursor: pointer;
+}
+.work-types-title {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.freelancer-queue {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.freelancer-queue .freelancer-card {
+    padding: 100px 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 0px 0px 15px 5px #acacacaa;
+    border-radius: 20px;
+}
+
+.freelancer-card button {
+    text-align: right;
+}
+
+.card-about {
+    grid-column: 2/4;
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.card-about .text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    font-size: 64px;
+}
+.card-text {
+    font-size: 22px;
+    opacity: 75%;
+    max-width: 800px;
+}
+
+.card-rating {
+    font-size: 64px;
+    margin: auto;
+}
+
+.page-num {
+    margin-top: 50px;
+    font-size: 32px;
+}
+
+.page-num .current {
+    color: #AC69F7
+}
+
+.page-num span {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+@media (max-width: 1350px) {
+    .freelancers-list .change-type-wrapper {
+        width: 100%;
+    }
+    .freelancers-list-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 44px;
+    }
+    .freelancers-list-title .title-freelancer-type {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 22px;
+    }
+    .work-types .list-link {
+        font-size: 22px;
+    }
+    .work-types-title {
+        font-size: 44px;
+    }
+    .card-title {
+        font-size: 44px;
+    }
+    .card-text {
+        font-size: 32px;
+    }
+    .card-rating {
+        font-size: 44px;
+        margin: auto;
+    }
+    .card-text {
+        font-size: 22px;
+    }
+    .card-image {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .freelancers-list {
+        padding: 220px 40px 100px 40px;
+    }
+    .freelancer-queue .freelancer-card {
+        padding: 60px 40px;
+    }
+    .card-title {
+        font-size: 32px;
+    }
+    .card-rating {
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .card-about {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .freelancer-queue .freelancer-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 1fr;
+        padding: 40px;
+    }
+    .card-about {
+        grid-column: 1/1;
+        align-items: center;
+        padding: 0;
+        margin-left: 0;
+    }
+    .card-about .card-title {
+        font-size: 32px;
+    }
+    .page-num {
+        font-size: 22px;
+    }
+    .card-image {
+        width: 150px;
+        margin: 0 auto;
+    }
+    .card-rating {
+        margin: 0 auto;
+    }
+}
