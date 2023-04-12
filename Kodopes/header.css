@@ -1,11 +1,12 @@
 .header {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.938);
     padding: 50px 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    z-index: 5;
 }
 
 .header-title {
@@ -29,6 +30,7 @@
 .nav-link.login-link {
     margin-top: -15px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .nav-menu-btn {
@@ -51,6 +53,7 @@
     top: 0; bottom: 0; left: 0; right: 0;
     padding: 35px 40px;
     background-color: #AC69F7;
+    z-index: 10;
 }
 
 .side-menu-str {
@@ -113,11 +116,63 @@
 }
 .side-menu-nav-link.login-link {
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.account-modal.active {
+    display: flex;
+}
+
+.account-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+    padding: 110px;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.account-modal .modal-title {
+    font-size: 44px;
+    margin-bottom: 40px;
+}
+#username-account {
+    color: #FF8C01;
+}
+
+.account-modal .modal-links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 32px;
+    gap: 10px;
+}
+
+.account-modal .modal-links a {
+    color: #000000;
+}
+.account-modal .modal-links .exit {
+    color: #AC69F7;
+    font-weight: 500;
+}
+
+.account-modal .close-btn {
+    position: fixed;
+    top: 50px;
+    right: 110px;
+    cursor: pointer;
 }
 
 
 @media (max-width: 1350px) {
-    
     
     .header-title {
         font-size: 32px;
@@ -127,6 +182,12 @@
         gap: 40px;
     }
     .nav-link {
+        font-size: 22px;
+    }
+    .account-modal .modal-title {
+        font-size: 32px;
+    }
+    .account-modal .modal-links {
         font-size: 22px;
     }
 }
@@ -142,6 +203,11 @@
     .nav-menu-btn {
         display: flex;
     }
+    
+    .account-modal .close-btn {
+        top: 35px;
+        right: 40px;
+    }
 }
 
 
@@ -153,6 +219,7 @@
     .side-menu-nav-link {
         font-size: 22px;
     } 
+    #username-account {font-size: 16px;}
 
 }
 

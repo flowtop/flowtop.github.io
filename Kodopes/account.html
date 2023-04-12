@@ -7,8 +7,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="account.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="freelancers.css">
 
     <title>Kodopes</title>
 </head>
@@ -78,95 +78,28 @@
             </div>
         </div>
 
-        <div class="freelancers-list">
-            <div class="freelancers-list-title">
-                Специалисты: <button class="title-freelancer-type">Верстка сайта</button>
-            </div>
-            <div class="change-type-wrapper">
-                <button class="change-type">
-                    <span>Верстка сайта</span> 
-                    <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09968 0.14558C2.54233 -0.120074 1.85494 -0.0221543 1.39344 0.43934C0.807655 1.02513 0.807655 1.97487 1.39344 2.56066L10.9394 12.1066C11.5252 12.6924 12.4749 12.6924 13.0607 12.1066L22.6066 2.56066C23.1924 1.97487 23.1924 1.02513 22.6066 0.43934C22.1452 -0.0221543 21.4578 -0.120074 20.9004 0.14558L12 9.04594L3.09968 0.14558Z" fill="black"/>
-                    </svg>    
-                </button>
-                
-                <div class="work-types">
-                    <div class="work-types-title">Выберите тип работы: </div>
-                    <div class="list-link">Верстка сайта</div>
-                    <div class="list-link">Программирование</div>
-                    <div class="list-link">Дизайн сайта</div>
-                    <div class="list-link">Перевод текстов</div>
-                    <div class="list-link">3D-моделирование</div>
-                    <div class="list-link">Копирайтинг</div>
-                    <div class="list-link">SEO-продвижение</div>
-                    <div class="list-link">Видеомонтаж</div>
+        <div class="account">
+            <div class="account-title">Личный кабинет</div>
+            <div class="account-info">
+                <div class="account-image">
+                    <img src="img/avatar.svg">
+                </div>
+                <div class="account-text">
+                    <div class="account-title">Василий Петрович</div>
+                    <div class="account-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sed est iusto ipsa. Vero, magni molestias distinctio, autem tempora doloremque excepturi provident laudantium corrupti similique reiciendis consectetur ducimus dolores beatae explicabo ipsa itaque sunt id nostrum labore architecto assumenda? Voluptatibus?</div>
                 </div>
             </div>
 
-            <div class="freelancer-queue">
-                <div class="freelancer-card">
-                    <img src="img/avatar.svg" class="card-image">
-                    <div class="card-about">
-                        <div class="text-part">
-                            <a href="#" class="card-title">Алеша Попович</a>
-                            <div class="card-text">Сучка боля</div>
-                        </div>
-                    </div>
-                    <div class="card-rating">
-                        <div class="freelancer-params">
-                            <button class="card-rating">
-                                9.99
-                                <img src="img/rating.svg" class="star-img">
-                            </button>
-                        </div>
-                    </div>
+            <div class="notif">
+                <div class="notif-title">Уведомления</div>
+                <div class="notif-window">
+                    <div class="notif-message">Алеша Попович откликнулся на ваш проект “Проект по созданию проекта”.</div>
+                    <div class="notif-message">Алеша Попович откликнулся на ваш проект “Проект по созданию проекта”.</div>
+                    <div class="notif-message">Алеша Попович откликнулся на ваш проект “Проект по созданию проекта”.</div>
+                    <div class="notif-message">Алеша Попович откликнулся на ваш проект “Проект по созданию проекта”.</div>
+                    <div class="notif-message">Алеша Попович откликнулся на ваш проект “Проект по созданию проекта”.</div>
+                    <div class="notif-message">Алеша Попович откликнулся на ваш проект “Проект по созданию проекта”.</div>
                 </div>
-            </div>
-            <div class="freelancer-queue">
-                <div class="freelancer-card">
-                    <img src="img/avatar.svg" class="card-image">
-                    <div class="card-about">
-                        <div class="text-part">
-                            <a href="#" class="card-title">Алеша Попович</a>
-                            <div class="card-text">Сучка боля</div>
-                        </div>
-                    </div>
-                    <div class="card-rating">
-                        <div class="freelancer-params">
-                            <button class="card-rating">
-                                9.99
-                                <img src="img/rating.svg" class="star-img">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="freelancer-queue">
-                <div class="freelancer-card">
-                    <img src="img/avatar.svg" class="card-image">
-                    <div class="card-about">
-                        <div class="text-part">
-                            <a href="#" class="card-title">Алеша Попович</a>
-                            <div class="card-text">Сучка боля</div>
-                        </div>
-                    </div>
-                    <div class="card-rating">
-                        <div class="freelancer-params">
-                            <button class="card-rating">
-                                9.99
-                                <img src="img/rating.svg" class="star-img">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page-num">Страница: 
-                <span class="current" data-num="1">1</span>
-                <span data-num="2">2</span>
-                <span data-num="3">3</span>
-                <span data-num="4">4</span>
-                <span data-num="5">5</span>
             </div>
         </div>
 
@@ -181,11 +114,9 @@
         </footer>
 
 
-        <input type="number" id="page-number-input" style="display: none" value="1">
 
     </div>
     
-    <script src="worktype.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

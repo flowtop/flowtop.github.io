@@ -115,19 +115,6 @@
     margin-top: 30px;
 }
 
-.page-num {
-    margin-top: 50px;
-    font-size: 32px;
-}
-
-.page-num .current {
-    color: #AC69F7
-}
-
-.page-num span {
-    cursor: pointer;
-    margin-left: 5px;
-}
 
 
 @media (max-width: 1350px) {
@@ -197,8 +184,5 @@
     }
     .order-card .card-right .card-btn {
         font-size: 16px;
-    }
-    .page-num {
-        font-size: 22px;
     }
 }

@@ -6,17 +6,17 @@ document.querySelector(".side-nav-menu-btn").addEventListener("click", () => {
     document.querySelector(".side-menu").classList.add("hidden");
 });
 
-let customer = document.querySelector(".client-check");
-let freelancer = document.querySelector(".freelancer-check");
-let isFreelancer = document.querySelector(".isFreelancer");
 
-customer.addEventListener("click", () => {
-    freelancer.classList.remove("active");
-    customer.classList.add("active");
-    isFreelancer.setAttribute("value", "1");
-});
-freelancer.addEventListener("click", () => {
-    customer.classList.remove("active");
-    freelancer.classList.add("active");
-    isFreelancer.setAttribute("value", "2");
-});
+let accountBtn = document.querySelectorAll(".login-link");
+let modal = document.querySelector(".account-modal");
+let closeBtn = document.querySelector(".close-btn");
+
+for (let i = 0; i < accountBtn.length; i++) {
+    accountBtn[i].onclick = () => {
+        modal.classList.add("active");
+    }
+}
+
+closeBtn.onclick = () => {
+    modal.classList.remove("active");
+}

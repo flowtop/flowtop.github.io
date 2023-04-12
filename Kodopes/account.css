@@ -1,0 +1,124 @@
+.account {
+    padding: 200px 110px;
+}
+
+.account-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 50px 0;
+    gap: 30px;
+}
+
+.account-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.account-title {
+    font-size: 64px;
+}
+.account-description {
+    font-size: 32px;
+    margin-top: 20px;
+    opacity: 70%;
+}
+
+.notif {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.notif-title {
+    font-size: 64px;
+}
+
+.notif-window {
+    border: 5px solid #FF8C00;
+    border-radius: 20px;
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notif-message {
+    font-size: 32px;
+}
+
+@media (max-width: 1350px) {
+    
+    .account-title {
+        font-size: 44px;
+    }
+    .account-description {
+        font-size: 22px;
+    }
+    .notif-title {
+        font-size: 44px;
+    }
+    .notif-message {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .account {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+} 
+
+@media (max-width: 750px) {
+    
+    .account-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        margin: 50px 0;
+        gap: 30px;
+    }
+
+    .notif-window {
+        padding: 40px 30px;
+    }
+
+    .notif-title {
+        font-size: 32px;
+    }
+
+    .notif-message {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .notif {
+        align-items: center;
+    }
+
+    .notif-window {
+        border: none;
+        padding: 0;
+    }
+
+    .notif-message {
+        text-align: center;
+    }
+
+    .account-image img {
+        width: 200px;
+    }
+
+    .account {
+        text-align: center;
+    }
+}
