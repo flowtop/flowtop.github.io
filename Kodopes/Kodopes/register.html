@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <title>Кодопёс</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="index.html" class="header-title">
+                Kodo<span>Pes</span>
+            </a>
+            <nav class="header-nav ">
+                <a href="#" class="nav-link">Услуги</a>
+                <a href="#" class="nav-link">Фрилансеры</a>
+                <a href="#" class="nav-link">Заказы</a>
+                <a href="#" class="nav-link">Чат</a>
+                <a href="login.html" class="nav-link login-link">
+                    <svg width="60" height="51" viewBox="0 0 60 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 30C0 13.4315 13.4316 0 30 0C46.5684 0 60 13.4315 60 30C60 37.8258 57.0034 44.9518 52.0952 50.2931C49.5884 45.5712 45.6118 41.7486 40.7754 39.435C43.3906 36.7352 45 33.0555 45 29C45 20.7157 38.2842 14 30 14C21.7158 14 15 20.7157 15 29C15 33.0555 16.6094 36.7352 19.2246 39.435C14.3882 41.7486 10.4116 45.5712 7.90479 50.2931C2.99658 44.9518 0 37.8258 0 30Z" fill="#AC69F7"/>
+                    </svg>    
+                </a>
+
+
+                <div class="nav-menu-btn">
+                    <div class="nav-menu-btn-str"></div>
+                    <div class="nav-menu-btn-str"></div>
+                    <div class="nav-menu-btn-str"></div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="side-menu hidden">
+            <div class="side-menu-header">
+                <a href="index.html" class="side-menu-title">
+                    Kodo<span>Pes</span>
+                </a>
+
+                <div class="side-nav-menu-btn">
+                    <div class="side-nav-menu-btn-str"></div>
+                    <div class="side-nav-menu-btn-str"></div>
+                    <div class="side-nav-menu-btn-str"></div>
+                </div>
+            </div>
+            <div class="side-menu-nav">
+                <a href="#" class="side-menu-nav-link">Услуги</a>
+                <a href="#" class="side-menu-nav-link">Фрилансеры</a>
+                <a href="#" class="side-menu-nav-link">Заказы</a>
+                <a href="#" class="side-menu-nav-link">Чат</a>
+                <a href="login.html" class="side-menu-nav-link login-link">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="2" width="58" height="58" rx="29" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 30C0 13.4315 13.4315 0 30 0C46.5685 0 60 13.4315 60 30C60 37.8258 57.0035 44.9518 52.0952 50.2931C49.5881 45.5712 45.6117 41.7486 40.7755 39.435C43.3905 36.7352 45 33.0555 45 29C45 20.7157 38.2843 14 30 14C21.7157 14 15 20.7157 15 29C15 33.0555 16.6095 36.7352 19.2245 39.435C14.3883 41.7486 10.4119 45.5712 7.90478 50.2931C2.99652 44.9518 0 37.8258 0 30Z" fill="#FF8C00"/>
+                    </svg>                         
+                </a>
+            </div>
+            <div class="side-menu-str">
+
+            </div>
+        </div>
+
+        <div class="register">
+            <div class="register-window">
+                <form action="" class="forms-part">
+
+                    <div class="form-title">Регистрация</div>
+
+                    <div class="form-usertype">
+                        <div class="checkbox client-check active">Я Заказчик</div>
+                        <div class="checkbox freelancer-check">Я Фрилансер</div>
+                    </div>
+                        
+                    <input type="number" id="isFreelancer" class="isFreelancer" value="1" style="display: none">
+                    <input type="text" class="form name-form" required maxlength="100" placeholder="ФИО">
+                    <div class="input-underline"></div>
+                    <input type="text" class="form phone-form" required maxlength="100" placeholder="Номер телефона">
+                    <div class="input-underline"></div>
+                    <input type="email" class="form email-form" required maxlength="100" placeholder="Email">
+                    <div class="input-underline"></div>
+                    <input type="text" class="form about-form" required maxlength="300" placeholder="О вас">
+                    <div class="input-underline"></div>
+                    <input type="password" class="form pass" required maxlength="100" placeholder="Придумайте пароль">
+                    <div class="input-underline"></div>
+                    <input type="password" class="form pass2" required maxlength="100" placeholder="Повторите пароль">
+                    <div class="input-underline"></div>
+
+                    <input type="submit" class="form-submit-btn" value="Готово">
+                </form>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="names">
+                <div class="names-title">Разработчики</div>
+                <a href="#" class="name">Денисов Андрей</a>
+                <a href="#" class="name">Жданов владимир</a>
+                <a href="https://t.me/GGsight" class="name">Заика Денис</a>
+                <a href="https://t.me/holydaya" class="name">Поладов Михаил</a>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+.register {
+    width: 100%;
+    padding: 150px 110px 110px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-window {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid #FF8C01;
+}
+
+.register-window .forms-part {
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-window .forms-part .form-usertype {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.form-usertype .checkbox {
+    margin-top: 50px;
+    padding: 15px 60px;
+    font-size: 32px;
+    color: #FF8C01;
+    background-color: #FFFFFF;
+    border: 5px solid #FF8C01;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.form-usertype .checkbox.active {
+    background-color: #FF8C01;
+    color: #FFFFFF;
+}
+
+.form-title {
+    font-size: 44px;
+    font-weight: 500;
+    color: #FF8C01;
+}
+
+.forms-part .form {
+    border: none;
+    outline: none;
+    padding: 30px 50px;
+    width: 100%;
+    font-size: 32px;
+}
+.forms-part ::placeholder {
+    color: #FF8C01;
+}
+.input-underline {
+    height: 6px;
+    width: 100%;
+    background-color: #FF8C01;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.form-submit-btn {
+    margin-top: 50px;
+    padding: 15px 60px;
+    font-size: 32px;
+    color: #AC69F7;
+    background-color: #FFFFFF;
+    border: 5px solid #AC69F7;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #AC69F7;
+    color: #FFFFFF;
+}
+
+.login-to-registry-link {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.login-to-registry-link a {
+    color: #AC69F7;
+}
+
+
+@media (max-width: 1350px) {
+    .form-usertype .checkbox  {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .register {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .register-window .forms-part .form-usertype {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 50px;
+    }
+    .register-window .forms-part .form-usertype .checkbox {
+        padding: 20px;
+        text-align: center;
+        margin-top: 0;
+    }
+    .register-window .forms-part {
+        padding: 30px 40px;
+    }
+    .register-window .forms-part .form {
+        padding: 20px 40px;
+    }
+    .register-window .forms-part input {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .register {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .register-window {
+        border: none;
+        padding-bottom: 30px;
+    }
+
+    .register-window .forms-part {
+        padding: 35px 40px;
+    }
+    
+    .register-window .forms-part .form {
+        padding: 20px;
+        font-size: 16px;
+    }
+    .form-title {
+        font-size: 32px;
+    } 
+
+    .login-to-registry-link {
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 30px;
+    }
+}
