@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background-blend-mode: multiply;
+    background: url(../img/field.png), #030a06d0;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+canvas {
+    display: block;
+    background: url(../img/field.png);
+    background-size: 100%;
+    border: 3px solid #ffffff;
+}
+
+.info {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.counter {
+    color: #fff;
+    font-size: 22px;
+}
+
+.start {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start.hidden {
+    display: none;
+}
+
+.start-window {
+    padding: 50px 80px;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.start-title {
+    font-size: 26px;
+}
+
+.start-btn {
+    margin-top: 20px;
+    background-color: #76c22c;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+.gameOver {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameOver.hidden {
+    display: none;
+}
+
+.gameOver-window {
+    padding: 50px 80px;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.gameOver-window .title {
+    font-size: 26px;
+}
+
+.gameOver-window .results {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.restart-btn {
+    margin-top: 20px;
+    background-color: #76c22c;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.pause {
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000000d2;
+}
+
+.pause.hidden {
+    display: none;
+}
+
+.pause-window {
+    padding: 50px 80px;
+    background: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.pause-title {
+    font-size: 26px;
+}
+
+.pause-btn {
+    margin-top: 20px;
+    background-color: #76c22c;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+}

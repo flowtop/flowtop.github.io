@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="info">
+            Управление: WASD <br>
+            Нажмите P, чтобы поставить игру на паузу.</div>
+
+        <div class="counter">Ваш счет: <span id="number">0</span></div>
+        <canvas id="game">
+
+        </canvas>
+
+        <div class="start">
+            <div class="start-window">
+                <div class="start-title">Змейка</div>
+                <div class="start-btn">Начать</div>
+            </div>
+        </div>
+
+        <div class="gameOver hidden">
+            <div class="gameOver-window">
+                <div class="title">Игра завершена!</div>
+                <div class="results">Ваш счет: <span id="endNumber"></span> </div>
+                <div class="restart-btn">Начать заново</div>
+            </div>
+        </div>
+
+        <div class="pause hidden">
+            <div class="pause-window">   
+                <div class="pause-title">Игра приостановлена</div>
+                <div class="pause-btn">Возобновить</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
