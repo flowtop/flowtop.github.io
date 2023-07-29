@@ -78,7 +78,7 @@
 .offertypes {
     width: 100%;
     padding: 100px 110px;
-    background-image: url(img/webp/offertypes-bg.webp);
+    background-image: url(../img/webp/offertypes-bg.webp);
     background-blend-mode: multiply;
     background-color: rgba(67, 15, 124, 0.90);
     display: flex;
