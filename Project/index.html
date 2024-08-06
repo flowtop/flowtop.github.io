@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Заглушка под десктоп -->
+    <div class="landscape_warning">
+        <div class="container">
+            <h1 class="landscape_warning__title">
+                Пожалуйста, используйте книжную ориентацию
+            </h1>
+            <p class="landscape_warning__paragraph">
+                Сайт доступен только на мобильных устройствах
+            </p>
+        </div>
+    </div>
+    
+    <div class="app">
+        <header class="header row">
+            <div class="header-inner">
+
+                <div class="header__bg_effect">
+                    <svg viewBox="0 0 366 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect fill="#1A2355"/>
+                        <g filter="url(#filter0_f_0_1)">
+                        <ellipse cx="270.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_f_0_1" x="53" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_0_1"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                </div>
+
+                <div class="header__account">
+                    <div class="header__user_info">
+                        <!-- <img class="header__account-avatar" src="assets/img/card-icon.png" /> -->
+                        <div class="header__account-avatar">
+                            ИИ
+                        </div>
+                        <div class="header__account-username">
+                            <div class="username__head">Аккаунт: </div>
+                            <div class="username__value">Иванов Иван</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="header__settings_btn" >
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.41074 1.91074C9.56703 1.75446 9.77899 1.66667 10 1.66667C10.221 1.66667 10.433 1.75446 10.5893 1.91074C10.7455 2.06702 10.8333 2.27899 10.8333 2.5V2.575L10.8333 2.57832C10.8351 3.009 10.9627 3.42977 11.2005 3.78885C11.4374 4.14667 11.7735 4.42767 12.1676 4.59751C12.5702 4.77423 13.0165 4.82676 13.4492 4.7483C13.8833 4.66958 14.284 4.46264 14.5994 4.15409L14.6562 4.09726C14.7336 4.01978 14.8256 3.95832 14.9267 3.91638C15.0279 3.87444 15.1363 3.85286 15.2458 3.85286C15.3553 3.85286 15.4638 3.87444 15.5649 3.91638C15.6661 3.95831 15.758 4.01978 15.8354 4.09726L15.8361 4.09792C15.9136 4.17531 15.975 4.26722 16.017 4.36838C16.0589 4.46955 16.0805 4.57799 16.0805 4.6875C16.0805 4.79701 16.0589 4.90545 16.017 5.00662C15.975 5.10778 15.9132 5.20002 15.8357 5.27741L15.7857 5.32738L15.7793 5.33395C15.4707 5.64938 15.2638 6.05 15.185 6.48417C15.1167 6.8611 15.1477 7.24831 15.2737 7.60801C15.2836 7.68368 15.3039 7.75781 15.334 7.82828C15.5037 8.22413 15.7854 8.56173 16.1445 8.79953C16.5036 9.03733 16.9243 9.16494 17.355 9.16666L17.3583 9.16667H17.5C17.721 9.16667 17.933 9.25446 18.0893 9.41074C18.2455 9.56703 18.3333 9.77899 18.3333 10C18.3333 10.221 18.2455 10.433 18.0893 10.5893C17.933 10.7455 17.721 10.8333 17.5 10.8333L17.425 10.8333L17.4217 10.8333C16.991 10.8351 16.5702 10.9627 16.2112 11.2005C15.8533 11.4375 15.5723 11.7736 15.4024 12.1677C15.2258 12.5703 15.1732 13.0165 15.2517 13.4492C15.3304 13.8833 15.5374 14.284 15.8459 14.5994L15.9027 14.6562C15.9802 14.7336 16.0417 14.8255 16.0836 14.9267C16.1256 15.0279 16.1471 15.1363 16.1471 15.2458C16.1471 15.3553 16.1256 15.4638 16.0836 15.5649C16.0417 15.6661 15.9802 15.758 15.9027 15.8354L15.9021 15.8361C15.8247 15.9136 15.7328 15.975 15.6316 16.017C15.5305 16.0589 15.422 16.0805 15.3125 16.0805C15.203 16.0805 15.0945 16.0589 14.9934 16.017C14.8922 15.975 14.8 15.9132 14.7226 15.8357L14.6726 15.7857L14.6661 15.7793C14.3506 15.4707 13.95 15.2638 13.5158 15.185C13.0832 15.1066 12.637 15.1591 12.2344 15.3358C11.8402 15.5056 11.5041 15.7866 11.2671 16.1445C11.0293 16.5036 10.9017 16.9243 10.9 17.355L10.9 17.3583V17.5C10.9 17.721 10.8122 17.933 10.6559 18.0893C10.4996 18.2455 10.2877 18.3333 10.0667 18.3333C9.84565 18.3333 9.63369 18.2455 9.47741 18.0893C9.32113 17.933 9.23333 17.721 9.23333 17.5V17.425L9.2331 17.4055C9.22274 16.9625 9.07935 16.5329 8.82157 16.1725C8.56889 15.8192 8.21777 15.5484 7.81231 15.3938C7.41497 15.2241 6.97635 15.1745 6.55083 15.2517C6.11667 15.3304 5.71601 15.5374 5.40058 15.8459L5.34375 15.9027C5.26636 15.9802 5.17445 16.0417 5.07328 16.0836C4.97212 16.1256 4.86368 16.1471 4.75417 16.1471C4.64465 16.1471 4.53622 16.1256 4.43505 16.0836C4.33388 16.0417 4.24198 15.9802 4.16458 15.9027L4.16393 15.9021C4.08645 15.8247 4.02498 15.7328 3.98304 15.6316C3.94111 15.5305 3.91952 15.422 3.91952 15.3125C3.91952 15.203 3.94111 15.0945 3.98304 14.9934C4.02498 14.8922 4.08677 14.8 4.16425 14.7226L4.21429 14.6726L4.22072 14.6661C4.52927 14.3506 4.73625 13.95 4.81497 13.5158C4.89342 13.0831 4.8409 12.6369 4.66418 12.2343C4.49433 11.8402 4.21334 11.5041 3.85551 11.2671C3.49644 11.0293 3.07566 10.9017 2.64499 10.9H2.5C2.27899 10.9 2.06702 10.8122 1.91074 10.6559C1.75446 10.4996 1.66667 10.2877 1.66667 10.0667C1.66667 9.84565 1.75446 9.63369 1.91074 9.47741C2.06702 9.32113 2.27899 9.23333 2.5 9.23333H2.575L2.59449 9.2331C3.03748 9.22274 3.46712 9.07935 3.82754 8.82157C4.18081 8.56889 4.45157 8.21777 4.60621 7.81231C4.77594 7.41497 4.82546 6.97636 4.7483 6.55083C4.66958 6.11667 4.46264 5.71601 4.15409 5.40058L4.09726 5.34375C4.01978 5.26636 3.95831 5.17445 3.91638 5.07328C3.87444 4.97212 3.85286 4.86368 3.85286 4.75417C3.85286 4.64465 3.87444 4.53621 3.91638 4.43505C3.95831 4.33388 4.01978 4.24198 4.09726 4.16458L4.09792 4.16393C4.17531 4.08645 4.26722 4.02498 4.36838 3.98304C4.46955 3.94111 4.57799 3.91952 4.6875 3.91952C4.79701 3.91952 4.90545 3.94111 5.00662 3.98304C5.10778 4.02498 5.20002 4.08677 5.27741 4.16426L5.32737 4.21429L5.33395 4.22072C5.64937 4.52927 6.05 4.73625 6.48417 4.81497C6.8611 4.88331 7.24831 4.85226 7.60801 4.7263C7.68368 4.71641 7.75781 4.69615 7.82828 4.66595C8.22413 4.49629 8.56173 4.21459 8.79953 3.85551C9.03733 3.49644 9.16495 3.07566 9.16667 2.64499V2.5C9.16667 2.27899 9.25446 2.06702 9.41074 1.91074ZM16.9291 12.8365L16.1667 12.5L16.9326 12.8283C16.9742 12.7312 17.0433 12.6484 17.1314 12.59C17.2191 12.5319 17.3219 12.5007 17.4271 12.5H17.5C18.163 12.5 18.7989 12.2366 19.2678 11.7678C19.7366 11.2989 20 10.663 20 10C20 9.33696 19.7366 8.70107 19.2678 8.23223C18.7989 7.76339 18.163 7.5 17.5 7.5H17.3604C17.2552 7.49934 17.1525 7.46806 17.0647 7.40996C17.0056 7.37082 16.9551 7.32066 16.9156 7.26256C16.9038 7.20577 16.8859 7.15023 16.8624 7.09686C16.8187 6.99785 16.8057 6.88801 16.825 6.78152C16.8441 6.67618 16.8939 6.5789 16.9683 6.50192L17.0143 6.45592C17.2465 6.22381 17.4308 5.9482 17.5566 5.64485C17.6824 5.34136 17.7471 5.01604 17.7471 4.6875C17.7471 4.35896 17.6824 4.03364 17.5566 3.73015C17.4309 3.42694 17.2467 3.15145 17.0146 2.91941C16.7824 2.68697 16.5067 2.50257 16.2032 2.37676C15.8997 2.25095 15.5744 2.18619 15.2458 2.18619C14.9173 2.18619 14.592 2.25095 14.2885 2.37676C13.985 2.50257 13.7093 2.68696 13.4771 2.91941L13.4314 2.96509C13.3544 3.0394 13.2571 3.08928 13.1518 3.10837C13.0453 3.12768 12.9355 3.1146 12.8365 3.0709L12.8283 3.06738C12.7312 3.02577 12.6484 2.95667 12.59 2.8686C12.5319 2.78087 12.5007 2.67812 12.5 2.57292V2.5C12.5 1.83696 12.2366 1.20107 11.7678 0.732233C11.2989 0.263392 10.663 0 10 0C9.33696 0 8.70107 0.263392 8.23223 0.732233C7.76339 1.20107 7.5 1.83696 7.5 2.5V2.63958C7.49934 2.74479 7.46806 2.84753 7.40996 2.93526C7.37082 2.99436 7.32066 3.04491 7.26256 3.08435C7.20577 3.09624 7.15023 3.11406 7.09686 3.13761C6.99785 3.18131 6.88801 3.19435 6.78152 3.17504C6.67619 3.15594 6.5789 3.10607 6.50192 3.03175L6.45625 2.98607C6.22407 2.75363 5.94835 2.56923 5.64485 2.44342C5.34136 2.31761 5.01604 2.25286 4.6875 2.25286C4.35896 2.25286 4.03364 2.31761 3.73015 2.44342C3.4268 2.56917 3.15119 2.75346 2.91908 2.98574C2.68679 3.21786 2.50251 3.49346 2.37676 3.79682C2.25095 4.10031 2.18619 4.42563 2.18619 4.75417C2.18619 5.08271 2.25095 5.40802 2.37676 5.71152C2.50257 6.01501 2.68696 6.29073 2.91941 6.52292L2.96508 6.56859C3.0394 6.64557 3.08927 6.74285 3.10837 6.84818C3.12768 6.95468 3.11465 7.06451 3.07095 7.16353C3.06386 7.17959 3.05728 7.19587 3.05122 7.21235C3.0137 7.31436 2.94636 7.40272 2.85796 7.46595C2.7716 7.52772 2.66903 7.56271 2.56303 7.56667H2.5C1.83696 7.56667 1.20107 7.83006 0.732233 8.2989C0.263392 8.76774 0 9.40363 0 10.0667C0 10.7297 0.263392 11.3656 0.732233 11.8344C1.20107 12.3033 1.83696 12.5667 2.5 12.5667H2.63958C2.74479 12.5673 2.84753 12.5986 2.93526 12.6567C3.02334 12.715 3.09239 12.7979 3.13401 12.895L3.13761 12.9031C3.18131 13.0022 3.19435 13.112 3.17504 13.2185C3.15594 13.3238 3.10607 13.4211 3.03176 13.4981L2.98607 13.5437C2.75363 13.7759 2.56923 14.0517 2.44342 14.3551C2.31761 14.6586 2.25286 14.984 2.25286 15.3125C2.25286 15.641 2.31761 15.9664 2.44342 16.2698C2.56923 16.5733 2.75363 16.8491 2.98607 17.0813C3.21812 17.3134 3.49361 17.4976 3.79682 17.6232C4.10031 17.7491 4.42563 17.8138 4.75417 17.8138C5.08271 17.8138 5.40802 17.7491 5.71152 17.6232C6.01487 17.4975 6.2908 17.3129 6.52292 17.0806L6.56858 17.0349C6.64556 16.9606 6.74285 16.9107 6.84818 16.8916C6.95468 16.8723 7.06451 16.8854 7.16353 16.9291C7.17959 16.9361 7.19587 16.9427 7.21235 16.9488C7.31436 16.9863 7.40272 17.0536 7.46595 17.142C7.52772 17.2284 7.56271 17.331 7.56667 17.437V17.5C7.56667 18.163 7.83006 18.7989 8.2989 19.2678C8.76774 19.7366 9.40362 20 10.0667 20C10.7297 20 11.3656 19.7366 11.8344 19.2678C12.3033 18.7989 12.5667 18.163 12.5667 17.5V17.3604C12.5673 17.2552 12.5986 17.1525 12.6567 17.0647C12.715 16.9767 12.7979 16.9076 12.895 16.866L12.9031 16.8624C13.0022 16.8187 13.112 16.8057 13.2185 16.825C13.3238 16.8441 13.4211 16.8939 13.4981 16.9682L13.5441 17.0143C13.7762 17.2465 14.0518 17.4308 14.3551 17.5566C14.6586 17.6824 14.984 17.7471 15.3125 17.7471C15.641 17.7471 15.9664 17.6824 16.2698 17.5566C16.5732 17.4308 16.8488 17.2465 17.0809 17.0143C17.0808 17.0144 17.0807 17.0145 17.0806 17.0146L16.4917 16.425L17.0813 17.0139C17.0811 17.014 17.081 17.0141 17.0809 17.0143C17.3132 16.7821 17.4975 16.5065 17.6232 16.2032C17.7491 15.8997 17.8138 15.5744 17.8138 15.2458C17.8138 14.9173 17.7491 14.592 17.6232 14.2885C17.4975 13.9851 17.3129 13.7092 17.0806 13.4771L17.0349 13.4314C16.9606 13.3544 16.9107 13.2571 16.8916 13.1518C16.8723 13.0453 16.8854 12.9355 16.9291 12.8365ZM8.33333 10C8.33333 9.07952 9.07952 8.33333 10 8.33333C10.9205 8.33333 11.6667 9.07952 11.6667 10C11.6667 10.9205 10.9205 11.6667 10 11.6667C9.07952 11.6667 8.33333 10.9205 8.33333 10ZM10 6.66667C8.15905 6.66667 6.66667 8.15905 6.66667 10C6.66667 11.8409 8.15905 13.3333 10 13.3333C11.8409 13.3333 13.3333 11.8409 13.3333 10C13.3333 8.15905 11.8409 6.66667 10 6.66667Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__finance">
+                    <div class="header__finance-balance">
+                        <span style="font-family: sans-serif;">$</span> 12.699995
+                    </div>
+                    <div class="header__finance__earn">
+                        <div class="finance__earn-head">Прибыль в час:</div>
+                        <div class="finance__earn-value">0.0033 <span style="font-family: sans-serif;">$</span> </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- TODO: Сделать нижний навбар <DONE> -->
+        <nav class="navbar row">
+
+            <div class="navbar__share">
+                <button class="navbar__share-share_btn">
+                    Поделиться
+                </button>
+                <button class="navbar__share-copy_btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="navbar-inner">
+
+                <div class="navbar__btn active" data-tabname="my_cards">
+
+                    <svg class="navbar__btn-icon" width="17" height="18" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 6.74997C17 5.50733 15.9926 4.49997 14.75 4.49997H14.375V2.86937C14.375 1.49244 13.1493 0.438486 11.7879 0.644757L2.41294 2.06521C1.31301 2.23187 0.5 3.17734 0.5 4.28982V15C0.5 16.2426 1.50736 17.25 2.75 17.25H14.75C15.9926 17.25 17 16.2426 17 15V6.74997ZM12.875 2.86937V4.49997H2.75C2.48702 4.49997 2.23458 4.54509 2 4.628V4.28982C2 3.91899 2.271 3.60384 2.63765 3.54828L12.0126 2.12783C12.4664 2.05907 12.875 2.41039 12.875 2.86937ZM2 6.74997C2 6.33576 2.33579 5.99997 2.75 5.99997H14.75C15.1642 5.99997 15.5 6.33576 15.5 6.74997V8.24997H12.875C11.4253 8.24997 10.25 9.42523 10.25 10.875C10.25 12.3247 11.4253 13.5 12.875 13.5H15.5V15C15.5 15.4142 15.1642 15.75 14.75 15.75H2.75C2.33579 15.75 2 15.4142 2 15V6.74997ZM15.5 12H12.875C12.2537 12 11.75 11.4963 11.75 10.875C11.75 10.2537 12.2537 9.74997 12.875 9.74997H15.5V12Z" fill="white" fill-opacity="0.12"/>
+                    </svg>
+                    
+                    <div class="navbar__btn-title">Мои карты</div>
+
+                </div>
+
+                <div class="navbar__btn" data-tabname="cards_shop">
+
+                    <svg class="navbar__btn-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.46967 0.21967C0.762563 -0.0732233 1.23744 -0.0732233 1.53033 0.21967L1.89473 0.584066C2.26837 0.957707 2.49858 1.45093 2.54503 1.9773L2.63527 3H16.75C16.9683 3 17.1758 3.09514 17.3183 3.26058C17.4608 3.42602 17.5241 3.64534 17.4917 3.86126L16.5583 10.0838C16.3931 11.1852 15.447 12 14.3332 12H3.42938L3.50138 12.8159C3.53554 13.2031 3.85981 13.5 4.24847 13.5H13.75C14.9926 13.5 16 14.5074 16 15.75C16 16.9926 14.9926 18 13.75 18C12.5074 18 11.5 16.9926 11.5 15.75C11.5 15.487 11.5451 15.2346 11.628 15H6.12197C6.20488 15.2346 6.25 15.487 6.25 15.75C6.25 16.9926 5.24264 18 4 18C2.75736 18 1.75 16.9926 1.75 15.75C1.75 15.1044 2.02188 14.5224 2.45738 14.1121C2.20793 13.7845 2.04579 13.3853 2.00718 12.9478L1.05083 2.10914C1.03535 1.93368 0.958613 1.76927 0.834066 1.64473L0.46967 1.28033C0.176777 0.987437 0.176777 0.512563 0.46967 0.21967ZM13.75 15C13.3358 15 13 15.3358 13 15.75C13 16.1642 13.3358 16.5 13.75 16.5C14.1642 16.5 14.5 16.1642 14.5 15.75C14.5 15.3358 14.1642 15 13.75 15ZM3.29703 10.5H14.3332C14.7045 10.5 15.0199 10.2284 15.0749 9.86126L15.8791 4.5H2.76762L3.29703 10.5ZM4 15C3.58579 15 3.25 15.3358 3.25 15.75C3.25 16.1642 3.58579 16.5 4 16.5C4.41421 16.5 4.75 16.1642 4.75 15.75C4.75 15.3358 4.41421 15 4 15Z" fill="white" fill-opacity="0.12"/>
+                    </svg>
+                    
+                    <div class="navbar__btn-title">Магазин</div>
+
+                </div>
+
+                <div class="navbar__btn" data-tabname="friends">
+
+                    <svg class="navbar__btn-icon" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.5 2.25C5.25736 2.25 4.25 3.25736 4.25 4.5C4.25 5.74264 5.25736 6.75 6.5 6.75C7.74264 6.75 8.75 5.74264 8.75 4.5C8.75 3.25736 7.74264 2.25 6.5 2.25ZM2.75 4.5C2.75 2.42893 4.42893 0.75 6.5 0.75C8.57107 0.75 10.25 2.42893 10.25 4.5C10.25 6.57107 8.57107 8.25 6.5 8.25C4.42893 8.25 2.75 6.57107 2.75 4.5ZM0.5 13.5C0.5 11.4289 2.17893 9.75 4.25 9.75H8.75C10.8211 9.75 12.5 11.4289 12.5 13.5V15.75C12.5 16.1642 12.1642 16.5 11.75 16.5C11.3358 16.5 11 16.1642 11 15.75V13.5C11 12.2574 9.99264 11.25 8.75 11.25H4.25C3.00736 11.25 2 12.2574 2 13.5V15.75C2 16.1642 1.66421 16.5 1.25 16.5C0.835786 16.5 0.5 16.1642 0.5 15.75V13.5ZM11.4298 1.43666C11.5852 1.05271 12.0225 0.867449 12.4064 1.02287C13.7793 1.57861 14.75 2.92505 14.75 4.5C14.75 6.07495 13.7793 7.42139 12.4064 7.97714C12.0225 8.13256 11.5852 7.9473 11.4298 7.56334C11.2744 7.17939 11.4597 6.74215 11.8436 6.58673C12.6696 6.25239 13.25 5.44308 13.25 4.5C13.25 3.55692 12.6696 2.74761 11.8436 2.41327C11.4597 2.25786 11.2744 1.82061 11.4298 1.43666ZM13.4326 10.4125C13.5565 10.0172 13.9773 9.79724 14.3726 9.92112C15.8944 10.3981 17 11.819 17 13.5V15.75C17 16.1642 16.6642 16.5 16.25 16.5C15.8358 16.5 15.5 16.1642 15.5 15.75V13.5C15.5 12.4932 14.8382 11.639 13.924 11.3525C13.5287 11.2286 13.3087 10.8078 13.4326 10.4125Z" fill="white" fill-opacity="0.12"/>
+                    </svg>
+                    
+                    <div class="navbar__btn-title">Друзья</div>
+
+                </div>
+
+                <div class="navbar__btn" data-tabname="finances">
+
+                    <svg class="navbar__btn-icon" width="17" height="18" viewBox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 3.75C9 3.33579 8.66421 3 8.25 3C7.83579 3 7.5 3.33579 7.5 3.75V4.56703C6.90431 4.67899 6.4049 4.92838 6.02263 5.29378C5.49283 5.80021 5.25 6.47166 5.25 7.125C5.25 8.54704 6.52518 9.75 8.25 9.75C8.85937 9.75 9.22853 9.87675 9.43207 10.036C9.6024 10.1693 9.75 10.3974 9.75 10.875C9.75 11.3059 9.59329 11.5461 9.38272 11.7022C9.1413 11.8811 8.75386 12 8.25 12C7.68742 12 7.3234 11.8484 7.10835 11.6542C6.90373 11.4695 6.75 11.1713 6.75 10.6875C6.75 10.2733 6.41421 9.9375 6 9.9375C5.58579 9.9375 5.25 10.2733 5.25 10.6875C5.25 11.5162 5.52896 12.2492 6.10319 12.7676C6.49046 13.1173 6.97077 13.3321 7.5 13.4324V14.25C7.5 14.6642 7.83579 15 8.25 15C8.66421 15 9 14.6642 9 14.25V13.4351C9.45731 13.3526 9.89957 13.1862 10.2759 12.9072C10.8875 12.4539 11.25 11.7566 11.25 10.875C11.25 10.0401 10.9649 9.33073 10.3564 8.85463C9.78108 8.4045 9.02524 8.25 8.25 8.25C7.20559 8.25 6.75 7.57796 6.75 7.125C6.75 6.84084 6.85333 6.57479 7.0591 6.37809C7.26135 6.18476 7.625 6 8.25 6C8.75008 6 9.06502 6.22712 9.27813 6.50416C9.38948 6.64892 9.4692 6.80475 9.51981 6.93878C9.55812 7.04022 9.57073 7.10433 9.57488 7.12544C9.57691 7.13573 9.57692 7.1358 9.57692 7.125C9.57692 7.53921 9.91271 7.875 10.3269 7.875C10.7411 7.875 11.0769 7.53921 11.0769 7.125C11.0769 6.90455 11.0122 6.64472 10.9231 6.40887C10.8277 6.15618 10.6802 5.86671 10.4671 5.58959C10.1432 5.16852 9.6605 4.77165 9 4.59547V3.75Z" fill="white" fill-opacity="0.12"/>
+                        <path d="M8.25 0.75C3.69365 0.75 0 4.44365 0 9C0 13.5563 3.69365 17.25 8.25 17.25C12.8063 17.25 16.5 13.5563 16.5 9C16.5 4.44365 12.8063 0.75 8.25 0.75ZM1.5 9C1.5 5.27208 4.52208 2.25 8.25 2.25C11.9779 2.25 15 5.27208 15 9C15 12.7279 11.9779 15.75 8.25 15.75C4.52208 15.75 1.5 12.7279 1.5 9Z" fill="white" fill-opacity="0.12"/>
+                    </svg>
+                        
+                    
+                    <div class="navbar__btn-title">Финансы</div>
+
+                </div>
+
+            </div>
+        </nav>
+
+
+        <!-- TODO: Сделать модалку <DONE> -->
+        <div class="modal_message">
+            <div class="modal_message-overlay"></div>
+
+            <div class="modal_message-inner row">
+                <img class="modal_message__app_icon" src="assets/img/modal-gift-icon.png" />
+
+                <h1 class="modal_message__title">
+                    Main TItile Dialoge
+                </h1>
+                <p class="modal_message__subtitle">
+                    Описание самого диалога это может быть даже на неслько строк так как диалоги бывают разные
+                </p>
+
+                <button class="modal_message__mini_btn">Мини кнопка</button>
+
+                <p class="modal_message__subtitle">
+                    Второе описание это тоже может когда то пригадиться в некторых случаях есть 2 описание
+                </p>
+
+                <div class="modal_message__gift">
+                    <div class="modal_message__gift-col">
+                        <div class="col__head">Прибыль в час:</div>
+                        <div class="col__value">
+                            1.33 <span style="font-family: sans-serif;">$</span>
+                        </div>
+                    </div>
+                    <div class="modal_message__gift-col">
+                        <div class="col__head">Стоимость карточки:</div>
+                        <div class="col__value">
+                            12.33 <span style="font-family: sans-serif;">$</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="modal_message__main_btn">Основная кнопка</button>
+
+            </div>
+        </div>
+
+        <!-- TODO: Сделать уведомления <DONE> -->
+        <!-- Docs: 
+            Чтобы открыть/закрыть уведомление (то же самое для попапа с приложением App Store), вызовите функцию:
+            
+            toggleNotif(
+                "ID нужного уведомления", 
+                true - если хотите открыть уведомление/false - если закрыть
+            );
+
+            Для крутящейся иконки необходимо добавить класс rotating (см. ниже)
+        -->
+        <div class="notif row" id="copied_notif">
+            <div class="notif-inner">
+                <img src="assets/img/ui/check-circle.svg" class="notif__icon" />
+                <div class="notif__text">Ссылка скопирована</div>
+            </div>
+        </div>
+
+        <div class="notif row" id="rendering_notif">
+            <div class="notif-inner">
+                <img src="assets/img/ui/rendering.svg" class="notif__icon rotating" />
+                <div class="notif__text">Обработка данных</div>
+            </div>
+        </div>
+
+        <div class="app_popup" id="app_popup">
+            <div class="app_popup-inner">
+                <div class="app_popup__left">
+                    <button class="app_popup__close_btn" onclick="toggleNotif('app_popup', false)">
+                        <img src="assets/img/ui/x-btn.svg" />
+                    </button>
+                    <img src="assets/img/app-store-poster.png" class="app_popup__icon" />
+                    <div class="app_popup__info">
+                        <h2 class="app_popup__info-title">
+                            Приложение
+                        </h2>
+                        <p class="app_popup__info-subtitle">
+                            Для IOS или Android
+                        </p>
+                        <div class="app_popup__info-rating">
+                            <img src="assets/img/ui/star.svg" />
+                            <img src="assets/img/ui/star.svg" />
+                            <img src="assets/img/ui/star.svg" />
+                            <img src="assets/img/ui/star.svg" />
+                            <img src="assets/img/ui/star.svg" />
+                        </div>
+                        <p class="app_popup__info-subtitle">
+                            Бонус 100<span style="font-family: sans-serif;">$</span> за установку
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="app_popup__btn">
+                    Установить
+                </a>
+            </div>
+        </div>
+
+        <!-- TODO: Сделать обертку под вкладки <DONE> -->
+        <main class="main">
+            <div class="tab row active lazyload" data-tabname="my_cards">
+                
+                <!-- Заголовок вкладки-->
+                <h1 class="tab__title">
+                    Мои карточки
+                    <a class="tab__title-info_btn">
+                        <img src="assets/img/ui/info.svg" />
+                    </a>
+                </h1>
+
+                <div class="lazyload_template">
+                    <div class="lazyload_template-cardlist">
+                        <div class="lazyload_template__big_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__big_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Секция с особыми карточками -->
+                <section class="cards_list cards_big">
+
+                    <div class="cards_list__card">
+
+                        <svg class="card_effect" width="177" height="254" viewBox="0 0 177 254" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_38_305)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_38_305" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_38_305"/>
+                            </filter>
+                            </defs>
+                        </svg>
+
+                        <div class="cards_list__card-inner">
+                            <div class="cards_list__card-special">
+                                <img src="assets/img/ui/star.svg" />
+                                Особая
+                            </div>
+                            <img src="assets/img/card-poster.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p>
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Кол-во:</div>
+                                <div class="footer__col-value">
+                                    x <span>1</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Секция с обычными карточками -->
+                <section class="cards_list cards_small">
+                    
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                            
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Кол-во:</div>
+                                <div class="footer__col-value">
+                                    <small>x</small> 1
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                            
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Кол-во:</div>
+                                <div class="footer__col-value">
+                                    <small>x</small> 1
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                            
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Кол-во:</div>
+                                <div class="footer__col-value">
+                                    <small>x</small> 1
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                            
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Кол-во:</div>
+                                <div class="footer__col-value">
+                                    <small>x</small> 1
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Кол-во:</div>
+                                <div class="footer__col-value">
+                                    x <span>1</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </section>
+
+            </div>
+            <div class="tab lazyload row" data-tabname="cards_shop">
+                
+                <!-- Заголовок вкладки-->
+                <h1 class="tab__title">
+                    Магазин карточек
+                    <a class="tab__title-info_btn">
+                        <img src="assets/img/ui/info.svg" />
+                    </a>
+                </h1>
+
+                <!-- Шаблон подгрузки -->
+                <div class="lazyload_template">
+                    <div class="lazyload_template-cardlist">
+                        <div class="lazyload_template__big_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__big_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                        <div class="lazyload_template__small_card">
+                            <div class="inner_effect"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Секция с особыми карточками -->
+                <section class="cards_list cards_big">
+                    
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <div class="cards_list__card-inner">
+                            <div class="cards_list__card-special">
+                                <img src="assets/img/ui/star.svg" />
+                                426 034 шт.
+                            </div>
+                            <img src="assets/img/card-poster.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p>
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Цена:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+
+                        <div class="cards_list__card-inner">
+                            <div class="cards_list__card-special">
+                                <img src="assets/img/ui/star.svg" />
+                                Особая
+                            </div>
+                            <img src="assets/img/card-poster.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p>
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Цена:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Секция с обычными карточками -->
+                <section class="cards_list cards_small">
+                    
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                            
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Цена:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                            
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Цена:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                            
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Цена:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                            
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Цена:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                            
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Цена:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards_list__card">
+                        <svg class="card_effect" width="177" height="153" viewBox="0 0 177 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_f_2257_250)">
+                            <ellipse cx="217.5" cy="125.5" rx="117.5" ry="83.5" fill="#243387"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_f_2257_250" x="0" y="-58" width="435" height="367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                            <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_2257_250"/>
+                            </filter>
+                            </defs>
+                        </svg>
+                        <div class="cards_list__card-inner">
+                            <img src="assets/img/card-icon.png" class="cards_list__card-poster" />
+                            <h2 class="cards_list__card-title">Ацтекское золото</h2>
+                            <!-- <p class="cards_list__card-subtitle">Описание Описание Описание Описание</p> -->
+                        </div>
+                        <div class="cards_list__card-footer">
+                            <div class="footer__col">
+                                <div class="footer__col-head">Цена:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="footer__col">
+                                <div class="footer__col-head">Прибыль в час:</div>
+                                <div class="footer__col-value">
+                                    0.0033<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </section>
+
+            </div>
+            <div class="tab lazyload" data-tabname="friends">
+                
+                <!-- Заголовок вкладки-->
+                <h1 class="tab__title row">
+                    Пригласите друзей!
+                    <a class="tab__title-info_btn">
+                        <img src="assets/img/ui/info.svg" />
+                    </a>
+                </h1>
+
+                <!-- Рефералки -->
+                <section class="referal_list row">
+                    <div class="referal_list-inner">
+                        <a href="#" class="referal_list__ref">
+                            <img class="referal_list__ref-gift_icon" src="assets/img/gift.png" />
+                            <div class="referal_list__ref-info">
+                                <h2 class="ref-info__title">Пригласить друга!</h2>
+                                <p class="ref-info__subtitle">За каждого приглашенного <b><span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span></b></p>
+                            </div>
+                        </a>
+                        <a href="#" class="referal_list__ref">
+                            <img class="referal_list__ref-gift_icon" src="assets/img/gift.png" />
+                            <div class="referal_list__ref-info">
+                                <h2 class="ref-info__title">Активные друзья!</h2>
+                                <p class="ref-info__subtitle">За покупку карточек <b><span style="font-family: sans-serif;">+</span>0.5<span style="font-family: sans-serif;">$</span></b></p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="friends row">
+                    <div class="friends-inner">
+
+                        <!-- Шапка -->
+                        <div class="friends__header">
+                            <h2 class="friends__header-title">Список ваших друзей: <b class="friends_value"><span>(</span>10<span>)</span></b></h2>
+                            <button class="friends__header-button">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2016_8472)">
+                                    <path d="M17.075 12.5C16.5333 14.0332 15.508 15.3489 14.1535 16.2487C12.799 17.1485 11.1887 17.5838 9.56535 17.4888C7.94199 17.3938 6.39346 16.7738 5.15313 15.7222C3.9128 14.6706 3.04785 13.2443 2.68864 11.6584C2.32942 10.0724 2.4954 8.41263 3.16155 6.92919C3.82771 5.44576 4.95795 4.21902 6.38196 3.43384C7.80598 2.64865 9.44661 2.34755 11.0566 2.57592C12.6667 2.80429 14.1588 3.54975 15.3083 4.69997L19.1667 8.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.1667 3.33337V8.33337H14.1667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_2016_8472">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </button>
+                        </div>
+
+                        <div class="lazyload_template">
+                            <div class="lazyload_template-friendlist">
+                                <div class="lazyload_template__friend">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__friend">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__friend">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__friend">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__friend">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__friend">
+                                    <div class="inner_effect"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Список -->
+                        <div class="friends__list">
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+                                        
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+                                    
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+                                    
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+                                        
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+                                        
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+                                        
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+                                        
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+                                        
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+                                        
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+                                        
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                            <div class="friends__list-friend_card">
+                                <div class="friend_card__info">
+                                        
+                                    <!-- <img src="assets/img/ui/user.svg" class="friend_card__info-pic" /> -->
+                                    <div class="friend_card__info-pic">
+                                        ИИ
+                                    </div>
+
+                                    <div class="friend_card__info-about">
+                                        <h3>Иванов Иван</h3>
+                                        <p>
+                                            Прибыль в час: <b>12.22 <span style="font-family: sans-serif;">$</span></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="friend_card__award">
+                                    <span style="font-family: sans-serif;">+</span>0.1<span style="font-family: sans-serif;">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+            <div class="tab lazyload row" data-tabname="finances">
+                
+                <!-- Заголовок вкладки-->
+                <h1 class="tab__title">
+                    Финансы
+                    <a class="tab__title-info_btn">
+                        <img src="assets/img/ui/info.svg" />
+                    </a>
+                </h1>
+
+                <!-- TODO: Сделать обертку для вкладок -->
+                <div class="finances__header">
+                    <div class="finances__header-backline">
+                        <div class="backline__thumb">
+
+                        </div>
+                        <div class="finances__header-panel">
+                            <button class="panel__button" data-tabnum="1">Пополнение</button>
+                            <button class="panel__button" data-tabnum="2">Вывод</button>
+                            <button class="panel__button" data-tabnum="3">Детализация</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="finances">
+
+                    <!-- Вкладка пополнение -->
+                    <div class="finances__tab active" id="finances_tab_1">
+                        <div class="refill-swiper-container swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <!-- <Пополнение> Первый слайд -->
+                                <div class="swiper-slide">
+
+                                    <!-- Градиент на заднем плане -->
+                                    <svg class="slide_effect" width="366" height="270" viewBox="0 0 366 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_f_2016_9799)">
+                                        <ellipse cx="306.5" cy="323.5" rx="186.5" ry="123.5" fill="#243387" fill-opacity="0.73"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_f_2016_9799" x="-80" y="0" width="773" height="647" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_2016_9799"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <div class="finances__tab-inner finances__tab-inner_cards">
+                                        <div class="finances__tab-card refill-swiper-next refill_cards" data-card="mir1">
+                                            <img src="assets/img/mir-logo.png" />
+                                            <h3>
+                                                Карта
+                                            </h3>
+                                        </div>
+                                        <div class="finances__tab-card refill-swiper-next refill_cards" data-card="mir2">
+                                            <img src="assets/img/mir-logo.png" />
+                                            <h3>
+                                                Карта
+                                            </h3>
+                                        </div>
+                                        <div class="finances__tab-card refill-swiper-next refill_cards" data-card="mir3">
+                                            <img src="assets/img/mir-logo.png" />
+                                            <h3>
+                                                Карта
+                                            </h3>
+                                        </div>
+                                        <div class="finances__tab-card refill-swiper-next refill_cards" data-card="mir4">
+                                            <img src="assets/img/mir-logo.png" />
+                                            <h3>
+                                                Карта
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <Пополнение> Второй слайд -->
+                                <div class="swiper-slide">
+
+                                    <!-- Градиент на заднем плане -->
+                                    <svg class="slide_effect" width="366" height="270" viewBox="0 0 366 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_f_2016_9799)">
+                                        <ellipse cx="306.5" cy="323.5" rx="186.5" ry="123.5" fill="#243387" fill-opacity="0.73"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_f_2016_9799" x="-80" y="0" width="773" height="647" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_2016_9799"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <div class="finances__tab-inner">
+
+                                        <form class="finances__tab-form">
+
+                                            <!-- Текущая карта -->
+                                            <div class="form__picked_card">
+                                                <div class="form__picked_card-left">
+                                                    <img src="assets/img/mir-logo.png" class="form__picked_card-icon" />
+                                                    <div class="form__picked_card-info">
+                                                        <h3>Банковские карты</h3>
+                                                        <p>Карты Мир</p>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="form__picked_card-change_btn refill-swiper-prev">Изменить</button>
+                                            </div>
+
+                                            <!-- Ввод суммы -->
+                                            <div class="refill-form__input form__input">
+                                                <div class="sum_wrapper">
+                                                    <div class="form__input-dollar">$</div>
+                                                    <input type="number" value="50" placeholder="200">
+                                                </div>
+                                                <div class="form__input-hint">
+                                                    <p>Сумма одного депозита</p>
+                                                    <p>от 15<span style="font-family: sans-serif;">$</span> до 29 500<span style="font-family: sans-serif;">$</span></p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Варианты сумм -->
+                                            <div class="refill-form__options form__options">
+                                                <div class="form__options-option" data-optval="20" data-type="refill">
+                                                    20 <span style="font-family: sans-serif;">$</span>
+                                                </div>
+                                                <div class="form__options-option active" data-optval="50" data-type="refill">
+                                                    50 <span style="font-family: sans-serif;">$</span>
+                                                </div>
+                                                <div class="form__options-option" data-optval="100" data-type="refill">
+                                                    100 <span style="font-family: sans-serif;">$</span>
+                                                </div>
+                                                <div class="form__options-option" data-optval="200" data-type="refill">
+                                                    200 <span style="font-family: sans-serif;">$</span>
+                                                </div>
+                                            </div>
+
+                                            <button class="form__send_btn">Пополнить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка Вывод -->
+                    <div class="finances__tab" id="finances_tab_2">
+                        <div class="conclude-swiper-container swiper-container">
+                            <div class="swiper-wrapper">
+                                
+                                <div class="swiper-slide">
+
+                                    <!-- Градиент на заднем плане -->
+                                    <svg class="slide_effect" width="366" height="270" viewBox="0 0 366 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_f_2016_9799)">
+                                        <ellipse cx="306.5" cy="323.5" rx="186.5" ry="123.5" fill="#243387" fill-opacity="0.73"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_f_2016_9799" x="-80" y="0" width="773" height="647" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_2016_9799"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <div class="finances__tab-inner finances__tab-inner_cards">
+                                        <div class="finances__tab-card conclude-swiper-next conclude_cards" data-card="mir1">
+                                            <img src="assets/img/mir-logo.png" />
+                                            <h3>
+                                                Карта
+                                            </h3>
+                                        </div>
+                                        <div class="finances__tab-card conclude-swiper-next conclude_cards" data-card="mir2">
+                                            <img src="assets/img/mir-logo.png" />
+                                            <h3>
+                                                Карта
+                                            </h3>
+                                        </div>
+                                        <div class="finances__tab-card conclude-swiper-next conclude_cards" data-card="mir3">
+                                            <img src="assets/img/mir-logo.png" />
+                                            <h3>
+                                                Карта
+                                            </h3>
+                                        </div>
+                                        <div class="finances__tab-card conclude-swiper-next conclude_cards" data-card="mir4">
+                                            <img src="assets/img/mir-logo.png" />
+                                            <h3>
+                                                Карта
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+
+                                    <!-- Градиент на заднем плане -->
+                                    <svg class="slide_effect" width="366" height="270" viewBox="0 0 366 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_f_2016_9799)">
+                                        <ellipse cx="306.5" cy="323.5" rx="186.5" ry="123.5" fill="#243387" fill-opacity="0.73"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_f_2016_9799" x="-80" y="0" width="773" height="647" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_2016_9799"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+
+                                    <div class="finances__tab-inner">
+                                        <form class="finances__tab-form">
+
+                                            <!-- Текущая карта -->
+                                            <div class="form__picked_card">
+                                                <div class="form__picked_card-left">
+                                                    <img src="assets/img/mir-logo.png" class="form__picked_card-icon" />
+                                                    <div class="form__picked_card-info">
+                                                        <h3>Банковские карты</h3>
+                                                        <p>Карты Мир</p>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="form__picked_card-change_btn conclude-swiper-prev">Изменить</button>
+                                            </div>
+
+                                            <!-- Ввод суммы -->
+                                            <div class="conclude-form__input form__input">
+                                                <input type="text" placeholder="Номер счёта">
+                                                <div class="sum_wrapper">
+                                                    <div class="form__input-dollar">$</div>
+                                                    <input type="number" value="50" placeholder="200">
+                                                </div>
+                                                <div class="form__input-hint">
+                                                    <p>Сумма одного депозита</p>
+                                                    <p>от 15<span style="font-family: sans-serif;">$</span> до 29 500<span style="font-family: sans-serif;">$</span></p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Варианты сумм -->
+                                            <div class="conclude-form__options form__options">
+                                                <div class="form__options-option" data-optval="20" data-type="conclude">
+                                                    20 <span style="font-family: sans-serif;">$</span>
+                                                </div>
+                                                <div class="form__options-option active" data-optval="50" data-type="conclude">
+                                                    50 <span style="font-family: sans-serif;">$</span>
+                                                </div>
+                                                <div class="form__options-option" data-optval="100" data-type="conclude">
+                                                    100 <span style="font-family: sans-serif;">$</span>
+                                                </div>
+                                                <div class="form__options-option" data-optval="200" data-type="conclude">
+                                                    200 <span style="font-family: sans-serif;">$</span>
+                                                </div>
+                                            </div>
+
+                                            <button class="form__send_btn">Пополнить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка Детализация -->
+                    <div class="finances__tab detalization_tab" id="finances_tab_3">
+
+                        <div class="lazyload_template">
+                            <div class="lazyload_template-detalization">
+                                <div class="lazyload_template__transaction">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__transaction">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__transaction">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__transaction">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__transaction">
+                                    <div class="inner_effect"></div>
+                                </div>
+                                <div class="lazyload_template__transaction">
+                                    <div class="inner_effect"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="finances__tab-inner">
+
+                            <div class="detalization__card">
+                                <div class="detalization__card-left">
+                                    <img src="assets/img/mir-logo.png" class="detalization__card-icon" />
+                                    <div class="detalization__card-title">
+                                        <h3>Перевод на карту</h3>
+                                        <p>UQD*****3B7G</p>
+                                    </div>
+                                </div>
+                                <div class="detalization__card-right">
+                                    <div class="detalization__card-head">
+                                        <div class="head__col">01.01.24</div>
+                                        <div class="head__col">22:22:58</div>
+                                    </div>
+                                    <div class="detalization__card-value detalization__card-value_green">
+                                        + 20.00 $
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detalization__card">
+                                <div class="detalization__card-left">
+                                    <img src="assets/img/mir-logo.png" class="detalization__card-icon" />
+                                    <div class="detalization__card-title">
+                                        <h3>Перевод на карту</h3>
+                                        <p>UQD*****3B7G</p>
+                                    </div>
+                                </div>
+                                <div class="detalization__card-right">
+                                    <div class="detalization__card-head">
+                                        <div class="head__col">01.01.24</div>
+                                        <div class="head__col">22:22:58</div>
+                                    </div>
+                                    <div class="detalization__card-value detalization__card-value_yellow">
+                                        - 20.00 $
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detalization__card">
+                                <div class="detalization__card-left">
+                                    <img src="assets/img/mir-logo.png" class="detalization__card-icon" />
+                                    <div class="detalization__card-title">
+                                        <h3>Перевод на карту</h3>
+                                        <p>UQD*****3B7G</p>
+                                    </div>
+                                </div>
+                                <div class="detalization__card-right">
+                                    <div class="detalization__card-head">
+                                        <div class="head__col">01.01.24</div>
+                                        <div class="head__col">22:22:58</div>
+                                    </div>
+                                    <div class="detalization__card-value detalization__card-value_red">
+                                        - 20.00 $
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detalization__card">
+                                <div class="detalization__card-left">
+                                    <img src="assets/img/mir-logo.png" class="detalization__card-icon" />
+                                    <div class="detalization__card-title">
+                                        <h3>Перевод на карту</h3>
+                                        <p>UQD*****3B7G</p>
+                                    </div>
+                                </div>
+                                <div class="detalization__card-right">
+                                    <div class="detalization__card-head">
+                                        <div class="head__col">01.01.24</div>
+                                        <div class="head__col">22:22:58</div>
+                                    </div>
+                                    <div class="detalization__card-value detalization__card-value_green">
+                                        + 20.00 $
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detalization__card">
+                                <div class="detalization__card-left">
+                                    <img src="assets/img/mir-logo.png" class="detalization__card-icon" />
+                                    <div class="detalization__card-title">
+                                        <h3>Перевод на карту</h3>
+                                        <p>UQD*****3B7G</p>
+                                    </div>
+                                </div>
+                                <div class="detalization__card-right">
+                                    <div class="detalization__card-head">
+                                        <div class="head__col">01.01.24</div>
+                                        <div class="head__col">22:22:58</div>
+                                    </div>
+                                    <div class="detalization__card-value detalization__card-value_yellow">
+                                        - 20.00 $
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detalization__card">
+                                <div class="detalization__card-left">
+                                    <img src="assets/img/mir-logo.png" class="detalization__card-icon" />
+                                    <div class="detalization__card-title">
+                                        <h3>Перевод на карту</h3>
+                                        <p>UQD*****3B7G</p>
+                                    </div>
+                                </div>
+                                <div class="detalization__card-right">
+                                    <div class="detalization__card-head">
+                                        <div class="head__col">01.01.24</div>
+                                        <div class="head__col">22:22:58</div>
+                                    </div>
+                                    <div class="detalization__card-value detalization__card-value_red">
+                                        - 20.00 $
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detalization__card">
+                                <div class="detalization__card-left">
+                                    <img src="assets/img/mir-logo.png" class="detalization__card-icon" />
+                                    <div class="detalization__card-title">
+                                        <h3>Перевод на карту</h3>
+                                        <p>UQD*****3B7G</p>
+                                    </div>
+                                </div>
+                                <div class="detalization__card-right">
+                                    <div class="detalization__card-head">
+                                        <div class="head__col">01.01.24</div>
+                                        <div class="head__col">22:22:58</div>
+                                    </div>
+                                    <div class="detalization__card-value detalization__card-value_green">
+                                        + 20.00 $
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detalization__card">
+                                <div class="detalization__card-left">
+                                    <img src="assets/img/mir-logo.png" class="detalization__card-icon" />
+                                    <div class="detalization__card-title">
+                                        <h3>Перевод на карту</h3>
+                                        <p>UQD*****3B7G</p>
+                                    </div>
+                                </div>
+                                <div class="detalization__card-right">
+                                    <div class="detalization__card-head">
+                                        <div class="head__col">01.01.24</div>
+                                        <div class="head__col">22:22:58</div>
+                                    </div>
+                                    <div class="detalization__card-value detalization__card-value_yellow">
+                                        - 20.00 $
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detalization__card">
+                                <div class="detalization__card-left">
+                                    <img src="assets/img/mir-logo.png" class="detalization__card-icon" />
+                                    <div class="detalization__card-title">
+                                        <h3>Перевод на карту</h3>
+                                        <p>UQD*****3B7G</p>
+                                    </div>
+                                </div>
+                                <div class="detalization__card-right">
+                                    <div class="detalization__card-head">
+                                        <div class="head__col">01.01.24</div>
+                                        <div class="head__col">22:22:58</div>
+                                    </div>
+                                    <div class="detalization__card-value detalization__card-value_red">
+                                        - 20.00 $
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="detalization__button">
+                                Загрузить ещё
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/notif.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/finances.js"></script>
+</body>
+</html>
