@@ -1,0 +1,76 @@
+@import "../fonts/fonts.css";
+
+@import "./reset.css";
+@import "./custom.css";
+
+@import "./lazyload.css";
+
+@import "./components/header.css";
+@import "./components/modal.css";
+@import "./components/navbar.css";
+@import "./components/notif.css";
+
+@import "./tab.css";
+@import "./my-cards.css";
+@import "./friends.css";
+@import "./finances.css";
+
+
+* {
+    font-family: "Formular", sans-serif;
+    touch-action: manipulation;
+    user-select: none;
+}
+
+.app {
+    background-color: var(--theme-bg);
+    min-height: 100dvh;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 105px;
+}
+
+
+/* Заглушка под десктоп */
+
+.landscape_warning {
+    background-color: var(--theme-bg);
+}
+.landscape_warning .container {
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.landscape_warning__title {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+.landscape_warning__paragraph {
+    color: var(--text-primary);
+}
+
+
+@media (max-width: 1024px) {
+    .row {
+        padding-left: 12px;
+        padding-right: 12px;   
+    }
+}
+
+@media (orientation: portrait) {
+    .landscape_warning {
+        display: none;
+    }
+}
+@media (orientation: landscape) {
+    .app {
+        display: none;
+    }
+}
