@@ -1,0 +1,20 @@
+.tab {
+    display: none;
+    padding-top: 25px;
+}
+.tab.active {
+    display: block;
+}
+.tab__title {
+    font-size: var(--tab-title);
+    font-weight: 400;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.tab__title-info_btn {
+    width: 20px;
+    height: 20px;
+}
