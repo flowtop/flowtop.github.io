@@ -90,10 +90,11 @@ class TransportTask {
             this.was_balanced = false;
         }
         
-        this.s = [total_supply, total_demand];
+        this.resources = [total_supply, total_demand];
 
         if (difference > 0) { // Предложение превышает спрос
             this.consumers.push(difference);
+            this.potentials_x.push(null);
 
             this.costs.forEach((consumer_row) => {
                 consumer_row.push(0);
@@ -105,6 +106,7 @@ class TransportTask {
 
         if (difference < 0) { // Спрос превышает предложение
             this.suppliers.push(Math.abs(difference));
+            this.potentials_y.push(null);
 
             this.costs.push(new Array(this.consumers.length).fill(0));
 
@@ -157,7 +159,8 @@ class TransportTask {
 
     count_potentials() {
 
-        console.log(this.potentials_x, this.potentials_y)
+        this.potentials_x = new Array(this.consumers.length).fill(null);
+        this.potentials_y = new Array(this.suppliers.length).fill(null);
 
         while (this.potentials_x.indexOf(null) !== -1 || this.potentials_y.indexOf(null) !== -1) {
 
@@ -422,52 +425,3 @@ let test_data = [
         ]
     },
 ];
-
-// console.log(test_data[3]);
-
-// let test_task = new TransportTask(test_data[3]);
-
-// test_task.create_balance();
-// test_task.create_table();
-// test_task.north_west_quantity();
-// test_task.count_potentials();
-// test_task.count_reduced_cost();
-
-// console.log(test_task.transportTable);
-// console.log(test_task.potentials_x, test_task.potentials_y);
-
-// let k = 0;
-
-// let prev_target_values = [];
-
-// while (!test_task.is_effective_plan() && k < 1000000) {
-//     console.log("#" + k);
-//     console.log(test_task.potentials_x, test_task.potentials_y);
-
-//     test_task.set_cycle();
-//     test_task.set_cycle_marks();
-//     test_task.change_quantities();
-
-//     console.log("Цикл: ", ...test_task.cycle);
-
-//     test_task.prepare_next_iteration();
-
-//     test_task.count_potentials();
-//     test_task.count_reduced_cost();
-
-//     console.log("Таблица: ", test_task.transportTable);
-
-//     console.log("Поменяли опорный план");
-
-//     let current_answer = test_task.get_answer();
-//     prev_target_values.push(current_answer);
-
-//     console.log("F = " + current_answer);
-    
-//     if (prev_target_values[prev_target_values.length - 3] === current_answer && prev_target_values.length > 2) {
-//         console.log("Произошло зацикливание");
-//         break;
-//     }
-    
-//     k++;
-// }
