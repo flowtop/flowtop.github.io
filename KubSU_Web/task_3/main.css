@@ -81,6 +81,7 @@ main .table_wrapper {
 
 main table {
     width: 100%;
+    max-width: 800px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -92,7 +93,6 @@ main table {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-
 }
 
 form label {
@@ -140,12 +140,24 @@ button[type="submit"] {
     margin-top: 3rem;
 }
 
+.content__links {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+}
+
 table {
     border-collapse: collapse;
 }
 td, th {
     border: 1px solid black;
     padding: 10px;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 @media (min-width: 1024px) {
@@ -157,5 +169,28 @@ td, th {
     main {
         padding-left: 5rem;
         padding-right: 5rem;
+    }
+
+    .main__content {
+        flex-direction: column-reverse;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .content__links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header nav ul {
+        display: flex;
+        flex-direction: column;
+
     }
 }
