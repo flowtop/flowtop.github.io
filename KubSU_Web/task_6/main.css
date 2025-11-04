@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.calculator-container > h1 {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+body {
+    padding: 20px;
+}
+
+.result-group {
+    margin-top: 20px;
+}
+
+.radio-group {
+    margin-top: 10px;
+}
+
+.quantity-form {
+    margin-bottom: 10px;
+}

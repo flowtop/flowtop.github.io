@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости услуги</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Калькулятор стоимости услуги</h1>
+
+        <div class="form-group quantity-form">
+            <label for="quantity">Количество:</label>
+            <input type="number" id="quantity" value="1" min="1">
+        </div>
+
+        <div class="form-group">
+            <label>Тип услуги:</label>
+            <div class="radio-group">
+                <input type="radio" id="serviceType1" name="serviceType" value="type1" checked>
+                <label for="serviceType1">Тип услуги 1 (Без опций/свойств)</label><br>
+
+                <input type="radio" id="serviceType2" name="serviceType" value="type2">
+                <label for="serviceType2">Тип услуги 2 (С опциями)</label><br>
+
+                <input type="radio" id="serviceType3" name="serviceType" value="type3">
+                <label for="serviceType3">Тип услуги 3 (Со свойством)</label><br>
+            </div>
+        </div>
+
+        <!-- Элементы, которые будут отображаться динамически -->
+        <div id="optionsContainer" class="form-group" style="display: none;">
+            <label for="serviceOption">Опция товара:</label>
+            <select id="serviceOption">
+                <option value="0">Выберите опцию</option>
+            </select>
+        </div>
+
+        <div id="propertiesContainer" class="form-group" style="display: none;">
+            <label for="serviceProperty">Свойство товара:</label>
+            <input type="checkbox" id="serviceProperty">
+            <span id="servicePropertyLabel"></span>
+        </div>
+
+        <div class="result-group">
+            <h2>Итоговая стоимость: <span id="totalCost">0.00</span> руб.</h2>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
