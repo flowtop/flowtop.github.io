@@ -16,15 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const options = {
         type2: {
-            0: { name: "Стандарт", price: 0 },
-            1: { name: "Премиум", price: 50 },
-            2: { name: "Эконом", price: -20 }
+            0: { name: "Zenology Pro", price: 80 },
+            1: { name: "xPand 2.0", price: 100 },
+            2: { name: "Kontakt + Basic Libraries", price: 120 }
         },
     };
 
     const properties = {
         type3: {
-            enabled: { name: "Доп. свойство", price: 75 }
+            enabled: { name: "Дополнительный набор звуков и пресетов", price: 75 }
         }
     };
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         optionsContainer.style.display = 'none';
         propertiesContainer.style.display = 'none';
-        serviceOptionSelect.innerHTML = '<option value="0">Выберите опцию</option>';
+        serviceOptionSelect.innerHTML = '<option value="0">Выберите нужный</option>';
 
         if (selectedType === 'type1') {
             //
@@ -103,3 +103,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
