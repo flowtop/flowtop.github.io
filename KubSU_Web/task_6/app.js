@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const basePrices = {
         type1: 100,
-        type2: 150,
+        type2: 0,
         type3: 120
     };
 
@@ -103,4 +103,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
 
