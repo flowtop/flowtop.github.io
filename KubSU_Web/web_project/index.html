@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Gear Store</title>
+
+  <!-- Slick styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MusicGear</div>
+    <nav>
+      <a href="#bestsellers">Хиты</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Музыкальное оборудование
+        <br />для студий и сцены
+      </h1>
+      <p>Гитары, синтезаторы, микшеры и аксессуары от ведущих брендов. Только проверенное звучание.</p>
+      <a href="#catalog" class="btn">Смотреть каталог</a>
+    </div>
+    <div class="hero-image">
+      <img src="img/hero.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="bestsellers">
+    <h2>Бестселлеры</h2>
+    <div class="product-slider">
+      <!-- 8 items -->
+      <div class="item"><img src="img/midi.png">
+        <h4>Синтезатор AKAI MPC 3 Mini</h4>
+        <div class="price">79 990 ₽</div>
+      </div>
+      <div class="item"><img src="img/guitar.png">
+        <h4>Fender Stratocaster 3</h4>
+        <div class="price">54 990 ₽</div>
+      </div>
+      <div class="item"><img src="img/mixer.png">
+        <h4>Микшер MixMan 2</h4>
+        <div class="price">32 000 ₽</div>
+      </div>
+      <div class="item"><img src="img/scarlett.webp">
+        <h4>Аудиокарта Focusrite Scarlett Solo Gen 4th</h4>
+        <div class="price">21 500 ₽</div>
+      </div>
+      <div class="item"><img src="img/monitors.png">
+        <h4>Мониторы YAMAHA-CH4</h4>
+        <div class="price">46 000 ₽</div>
+      </div>
+      <div class="item"><img src="img/mic.png">
+        <h4>Микрофон Fifine AM8</h4>
+        <div class="price">18 990 ₽</div>
+      </div>
+      <div class="item"><img src="img/midi.png">
+        <h4>MIDI-клавиатура AKAI MPC II Mini</h4>
+        <div class="price">25 000 ₽</div>
+      </div>
+      <div class="item"><img src="img/headphones.png">
+        <h4>Наушники AKG-87</h4>
+        <div class="price">14 500 ₽</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog">
+    <h2>Каталог</h2>
+    <div class="grid">
+      <!-- 2x4 grid -->
+      <div class="card"><img src="img/guitar.png">
+        <h4>Гитара</h4>
+      </div>
+      <div class="card"><img src="img/drums.png">
+        <h4>Барабаны</h4>
+      </div>
+      <div class="card"><img src="img/scarlett.webp">
+        <h4>Процессоры</h4>
+      </div>
+      <div class="card"><img src="img/midi.png">
+        <h4>Синтезаторы</h4>
+      </div>
+      <div class="card"><img src="img/mic.png">
+        <h4>Микрофоны</h4>
+      </div>
+      <div class="card"><img src="img/monitors.png">
+        <h4>Колонки</h4>
+      </div>
+      <div class="card"><img src="img/midi.png">
+        <h4>MIDI</h4>
+      </div>
+      <div class="card"><img src="img/mixer.png">
+        <h4>Аксессуары</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners">
+    <h2 style="text-align:center">Наши партнёры</h2>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:30px;align-items:center;opacity:.8">
+      <img src="https://dummyimage.com/160x80/222/aaa&text=Yamaha" alt="Yamaha" />
+      <img src="https://dummyimage.com/160x80/222/aaa&text=Roland" alt="Roland" />
+      <img src="https://dummyimage.com/160x80/222/aaa&text=Fender" alt="Fender" />
+      <img src="https://dummyimage.com/160x80/222/aaa&text=Shure" alt="Shure" />
+      <img src="https://dummyimage.com/160x80/222/aaa&text=Focusrite" alt="Focusrite" />
+      <img src="https://dummyimage.com/160x80/222/aaa&text=AKG" alt="AKG" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center">Оставить заявку</h2>
+    <div class="form-wrap">
+      <form action="https://formcarry.com/s/MjyvJrj8p1y" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="Заявка с сайта MusicGear" />
+        <input type="hidden" name="_template" value="table" />
+
+
+        <input type="text" name="name" placeholder="Имя" required />
+        <input type="tel" name="phone" placeholder="Телефон" required />
+
+
+        <button type="submit">Отправить</button>
+        <p style="font-size:14px;color:#9ca3af;text-align:center">Мы свяжемся с вами в ближайшее время</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 MusicGear. Все права защищены.
+
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
